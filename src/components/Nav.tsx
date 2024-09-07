@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import NavItem from "./NavItem";
+import MenuDiv from "./ui/MenuDiv";
 
 const Nav = () => {
   const t = useTranslations("Navigation");
@@ -10,7 +11,9 @@ const Nav = () => {
   return (
     <>
       {tNavItems.map(({ key, href }) => (
-        <NavItem key={key} title={t(key)} href={href} />
+        <MenuDiv>
+          <NavItem key={key} title={t(key)} href={href} />
+        </MenuDiv>
       ))}
     </>
   );

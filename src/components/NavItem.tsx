@@ -8,7 +8,12 @@ interface NavItemProps {
 const NavItem = ({ title, href }: NavItemProps) => {
   return (
     <>
-      <Link href={href}>{title}</Link>
+      <Link
+        className="font-bold w-full h-full flex items-center justify-center"
+        href={href}
+      >
+        {title}
+      </Link>
     </>
   );
 };
