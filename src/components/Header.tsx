@@ -16,7 +16,6 @@ const Header = () => {
     <header className="flex flex-col md:flex-row items-center justify-between bg-lightPrimary dark:bg-darkPrimary">
       {/* Mobile: Hamburger Button */}
       <button className="md:hidden p-2 focus:outline-none" onClick={toggleMenu}>
-        {/* Hamburger icon */}
         <svg
           className="w-6 h-6"
           fill="none"
@@ -33,7 +32,6 @@ const Header = () => {
         </svg>
       </button>
 
-      {/* Nav Section */}
       <div
         className={`items-center justify-center w-full md:w-auto md:flex-grow md:flex md:flex-row md:w-auto ${
           isMenuOpen ? "flex flex-col" : "hidden"
@@ -42,7 +40,6 @@ const Header = () => {
         <Nav />
       </div>
 
-      {/* Menu Section */}
       <div
         className={`w-full md:w-auto flex-col md:flex-row items-center md:pl-3 md:gap-5 md:mr-5 ${
           isMenuOpen ? "flex" : "hidden"
