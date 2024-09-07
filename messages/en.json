@@ -1,0 +1,9 @@
+{
+   "HomePage": {
+    "welcome": "Welcome to the app"
+    },
+    "Navigation": {
+        "home": "Home",
+        "about": "About me"
+    }
+}

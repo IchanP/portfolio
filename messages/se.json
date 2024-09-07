@@ -1,0 +1,9 @@
+{
+    "HomePage": {
+        "welcome": "Välkommen till appen"
+    },
+    "Navigation": {
+        "home": "Hem",
+        "about": "Om mig"
+    }
+}
