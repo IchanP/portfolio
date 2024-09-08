@@ -33,7 +33,7 @@ const Header = () => {
       </button>
 
       <div
-        className={`items-center justify-center w-full md:w-auto md:flex-grow md:flex md:flex-row md:w-auto ${
+        className={`items-center justify-center w-full md:w-auto md:flex-grow md:flex md:ml-10 md:flex-row md:gap-5 md:w-auto ${
           isMenuOpen ? "flex flex-col" : "hidden"
         } md:block`}
       >
@@ -41,14 +41,14 @@ const Header = () => {
       </div>
 
       <div
-        className={`w-full md:w-auto flex-col md:flex-row items-center md:pl-3 md:gap-5 md:mr-5 ${
+        className={`w-full md:w-auto flex-col md:flex-row items-center md:pr-5 md:gap-5 ${
           isMenuOpen ? "flex" : "hidden"
         } md:flex`}
       >
-        <MenuDiv>
+        <MenuDiv hoverOnLarge={false}>
           <ThemeSwitcher />
         </MenuDiv>
-        <MenuDiv>
+        <MenuDiv hoverOnLarge={false}>
           <LocaleToggleButton />
         </MenuDiv>
       </div>
