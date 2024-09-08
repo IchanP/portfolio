@@ -33,7 +33,7 @@ const Header = () => {
       </button>
 
       <div
-        className={`items-center justify-center w-full md:w-auto md:flex-grow md:flex md:ml-10 md:flex-row md:gap-5 md:w-auto ${
+        className={`items-center justify-center w-full md:w-auto md:flex-grow md:flex md:ml-10 md:flex-row md:w-auto ${
           isMenuOpen ? "flex flex-col" : "hidden"
         } md:block`}
       >

@@ -9,7 +9,7 @@ const NavItem = ({ title, href }: NavItemProps) => {
   return (
     <>
       <Link
-        className="font-bold w-full h-full flex items-center justify-center md:dark:hover:text-darkHover"
+        className="font-bold w-full h-full flex items-center justify-center px-5"
         href={href}
       >
         {title}

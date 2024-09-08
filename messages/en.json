@@ -4,6 +4,8 @@
     },
     "Navigation": {
         "home": "Home",
-        "about": "About me"
+        "about": "About me",
+        "school_projects": "Course work",
+        "personal_projects": "Projects"
     }
 }
