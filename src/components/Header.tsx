@@ -12,6 +12,7 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  // TODO add functionality so tapping outside of the menu closes it
   return (
     <header className="flex flex-col md:flex-row items-center justify-between bg-lightPrimary dark:bg-darkPrimary">
       {/* Mobile: Hamburger Button */}

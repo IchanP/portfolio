@@ -17,6 +17,9 @@ const config: Config = {
         darkPrimary: "#1d1c1c",
         darkHover: "#262c36",
       },
+      fontFamily: {
+        emoji: ['Twemoji Country Flags', 'Apple Color Emoji', 'Noto Color Emoji', 'sans-serif'],
+      },
     },
   },
   plugins: [],

@@ -1,11 +1,13 @@
 "use client";
 import getUnicodeFlagIcon from "country-flag-icons/unicode";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
+import { polyfillCountryFlagEmojis } from "country-flag-emoji-polyfill";
 
 const LocaleToggleButton = () => {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  polyfillCountryFlagEmojis();
 
   const currentLocale = pathname.startsWith("/en") ? "en" : "se";
   const toggleLocale = currentLocale === "en" ? "se" : "en";
@@ -19,10 +21,11 @@ const LocaleToggleButton = () => {
   };
 
   return (
-    <button onClick={changeLocale} className="text-3xl h-full w-full">
-      {toggleLocale.toUpperCase() === "EN" ? SE : GB}
+    <button onClick={changeLocale} className="text-3xl font-emoji h-full w-full md:mt-1">
+      {toggleLocale.toUpperCase() === "EN" ? SE : GB }
     </button>
   );
 };
 
 export default LocaleToggleButton;
+1
