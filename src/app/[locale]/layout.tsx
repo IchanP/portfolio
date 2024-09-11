@@ -5,6 +5,7 @@ import { Providers } from "../providers";
 import Header from "../../components/Header";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import Footer from "components/Footer";
 
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
@@ -33,7 +34,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} flex flex-col min-h-screen antialiased bg-lightbg text-black dark:bg-darkbg dark:text-white`}
+        className={`${geistSans.variable} ${geistMono.variable} flex flex-col grow h-screen antialiased bg-lightbg text-black dark:bg-darkbg dark:text-white`}
       >
         <Providers>
           <NextIntlClientProvider messages={messages}>
@@ -41,8 +42,8 @@ export default async function RootLayout({
             {children}
           </NextIntlClientProvider>
         </Providers>
-        <footer className="row-start-3 flex gap-4 sm:gap-6 flex-wrap items-center justify-center">
-          <p className="text-sm sm:text-base">Template</p>
+        <footer className="fixed bottom-0 w-full py-2 bg-lightPrimary dark:bg-darkPrimary">
+          <Footer />
         </footer>
       </body>
     </html>

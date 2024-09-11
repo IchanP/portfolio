@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
-import LocaleToggleButton from "./LocaleToggle";
+import LocaleToggleButton from "./logic/LocaleToggle";
 import MenuDiv from "./ui/MenuDiv";
 import Nav from "./Nav";
-import ThemeSwitcher from "./ThemeSwitcher";
+import ThemeSwitcher from "./logic/ThemeSwitcher";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +12,6 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // TODO add functionality so tapping outside of the menu closes it
   return (
     <header className="flex flex-col md:flex-row items-center justify-between bg-lightPrimary dark:bg-darkPrimary">
       {/* Mobile: Hamburger Button */}

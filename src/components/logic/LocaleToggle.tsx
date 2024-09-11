@@ -21,11 +21,13 @@ const LocaleToggleButton = () => {
   };
 
   return (
-    <button onClick={changeLocale} className="text-3xl font-emoji h-full w-full md:mt-1">
-      {toggleLocale.toUpperCase() === "EN" ? SE : GB }
+    <button
+      onClick={changeLocale}
+      className="text-3xl font-emoji h-full w-full md:mt-1"
+    >
+      {toggleLocale.toUpperCase() === "EN" ? GB : SE}
     </button>
   );
 };
 
 export default LocaleToggleButton;
-1
