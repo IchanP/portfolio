@@ -8,7 +8,7 @@ interface IconTextProps {
 
 const IconText = ({ iconSource, alt, text }: IconTextProps) => {
   return (
-    <div className="flex flex-row justify-center items-center gap-3">
+    <div className="flex flex-row justify-center items-center gap-3 cursor-pointer">
       <Image
         src={iconSource}
         alt={alt}
