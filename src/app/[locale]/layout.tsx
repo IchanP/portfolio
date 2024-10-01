@@ -40,11 +40,11 @@ export default async function RootLayout({
           <NextIntlClientProvider messages={messages}>
             <Header />
             {children}
+            <footer className="fixed bottom-0 w-full py-2 bg-lightPrimary dark:bg-darkPrimary">
+              <Footer />
+            </footer>
           </NextIntlClientProvider>
         </Providers>
-        <footer className="fixed bottom-0 w-full py-2 bg-lightPrimary dark:bg-darkPrimary">
-          <Footer />
-        </footer>
       </body>
     </html>
   );
