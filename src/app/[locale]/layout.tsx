@@ -40,17 +40,17 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${courierPrime.variable} flex flex-col grow h-screen antialiased bg-lightbg text-black dark:bg-darkbg dark:text-white`}
+        className={`${geistSans.variable} ${geistMono.variable} ${courierPrime.variable} flex flex-col min-h-screen antialiased bg-lightbg text-black dark:bg-darkbg dark:text-white`}
       >
         <Providers>
           <NextIntlClientProvider messages={messages}>
             <Header />
-            <div className="grid grid-rows-[1px_1fr_1px] items-center justify-items-center p-4 pt-8 sm:p-8 sm:pt-0 gap-8 sm:gap-16 font-[family-name:var(--font-geist-sans)]">
+            <div className="flex-grow grid grid-rows-[1px_1fr_1px] p-4 pt-8 sm:p-8 sm:pt-0 gap-8 sm:gap-16 font-[family-name:var(--font-geist-sans)]">
               <main className="flex w-full flex-col gap-4 sm:gap-8 row-start-2 items-center sm:items-start">
                 {children}
               </main>
             </div>
-            <footer className="fixed bottom-0 w-full py-2 bg-lightPrimary dark:bg-darkPrimary">
+            <footer className="bottom-0 w-full py-2 bg-lightPrimary dark:bg-darkPrimary">
               <Footer />
             </footer>
           </NextIntlClientProvider>

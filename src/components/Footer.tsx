@@ -2,7 +2,7 @@ import SocialMedia from "./SocialMedia";
 
 const Footer = () => {
   return (
-    <div className="">
+    <div>
       <SocialMedia />
     </div>
   );

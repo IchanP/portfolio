@@ -16,7 +16,7 @@
     "Projects": {
         "Repub": {
             "title": "Repub",
-            "summary": "Lorem ipsum tralalala"
+            "summary": "A customizable epub reader on the web. The idea is to provide a highly customizable epub reader on the web, with similar features to what one might find in a native application. You bring your own books! Built using nextjs ontop of epubjs."
         }
     }
 }

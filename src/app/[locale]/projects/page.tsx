@@ -5,7 +5,7 @@ import { getTranslatedProjects } from "data/projects";
 const ProjectsPage = () => {
   const projectsArray = getTranslatedProjects();
   return (
-    <div className="grid w-full grid-rows-[50px_1fr] text-center gap-5 justify-center items-center pb-10">
+    <div className="grid w-full grid-rows-[1fr] text-center gap-5 justify-center items-center">
       <div>
         <h1 className="text-3xl font-courier-prime">Personal Projects</h1>
       </div>
@@ -16,6 +16,7 @@ const ProjectsPage = () => {
               title={project.title}
               image="/fuckingweebkita.gif"
               summary={project.summary}
+              href={project.url}
             />
           </SquareBlurb>
         ))}

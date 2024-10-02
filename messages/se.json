@@ -12,5 +12,11 @@
     },
     "SocialMedia": {
         "find_me": "Finn eller kontakta mig här!"
+    },
+    "Projects": {
+        "Repub": {
+            "title": "Repub",
+            "summary": "Lorem ipsum tralalala"
+        }
     }
 }

@@ -11,7 +11,7 @@ const SocialMedia = () => {
   return (
     <div className="flex flex-col gap-1 items-center md:justify-center">
       <h2 className="text-l md:pr-3">{t("find_me")}</h2>
-      <div className="flex flex-row gap-2 items-center">
+      <div className="flex flex-row gap-3 items-center">
         <ExternalLinkOpener href="https://www.linkedin.com/in/pontus-grandin-13133b312/">
           <IconText iconSource="/ln-blue-40.png" alt="LinkedIn" />
         </ExternalLinkOpener>
@@ -27,3 +27,4 @@ const SocialMedia = () => {
 };
 
 export default SocialMedia;
+
