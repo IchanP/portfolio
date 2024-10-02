@@ -1,6 +1,8 @@
 {
    "HomePage": {
-    "welcome": "Welcome to the app"
+    "About": "About me",
+    "about_message_one": "Lorem ipsum odor amet, consectetuer adipiscing elit. Lectus netus tempor magna aenean mus adipiscing. Auctor sit vestibulum fermentum; tellus mauris imperdiet aenean neque. Dui ante id magnis venenatis pharetra semper, mauris mattis?",
+    "about_message_two": "Hendrerit imperdiet faucibus tortor habitant taciti libero. Pellentesque fusce inceptos pellentesque tempus consequat fermentum, praesent interdum. Egestas maximus auctor senectus senectus interdum cursus vel porta. Egestas mollis purus per accumsan fringilla sagittis litora. Ac platea blandit bibendum rutrum sed. Netus sed feugiat ultrices rutrum natoque malesuada. Tempus primis efficitur finibus fringilla facilisi senectus fringilla erat. Pharetra sollicitudin aliquet pulvinar rutrum nisl ligula. Mollis facilisis id ante, in adipiscing gravida. Egestas amet integer ipsum; tortor accumsan inceptos. Integer himenaeos felis phasellus curae fermentum placerat volutpat felis?"
     },
     "Navigation": {
         "home": "Home",

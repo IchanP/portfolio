@@ -6,7 +6,6 @@ const Nav = () => {
   const t = useTranslations("Navigation");
   const tNavItems = [
     { key: "home", href: "/" },
-    { key: "about", href: "/about" },
     { key: "personal_projects", href: "/projects" },
     { key: "school_projects", href: "/coursework" },
   ];
