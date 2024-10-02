@@ -45,7 +45,11 @@ export default async function RootLayout({
         <Providers>
           <NextIntlClientProvider messages={messages}>
             <Header />
-            {children}
+            <div className="grid grid-rows-[1px_1fr_1px] items-center justify-items-center p-4 pt-8 sm:p-8 sm:pt-0 gap-8 sm:gap-16 font-[family-name:var(--font-geist-sans)]">
+              <main className="flex flex-col w-full gap-4 sm:gap-8 row-start-2 items-center sm:items-start">
+                {children}
+              </main>
+            </div>
             <footer className="fixed bottom-0 w-full py-2 bg-lightPrimary dark:bg-darkPrimary">
               <Footer />
             </footer>

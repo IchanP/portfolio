@@ -12,9 +12,11 @@ const config: Config = {
       colors: {
         lightbg: "#f5f5f5",
         lightPrimary: "#e2e0e0",
+        lightSecondary: "rgba(173, 170, 173, 0.4)",
         lightHover: "#D1D5DB",
         darkbg: "#020305",
         darkPrimary: "#1d1c1c",
+        darkSecondary: "rgba(65, 61, 61, 0.75)",
         darkHover: "#262c36",
       },
       fontFamily: {
