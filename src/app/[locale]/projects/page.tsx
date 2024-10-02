@@ -2,13 +2,13 @@ import ProjectBox from "components/ui/ProjectBox";
 import SquareBlurb from "components/ui/SquareBlurb";
 
 const ProjectsPage = () => {
-  const randomArray = [1, 2];
+  const randomArray = [1, 2, 3];
   return (
-    <div className="flex w-full flex-col gap-16 justify-center items-center">
+    <div className="grid grid-rows-[50px_1fr] text-center gap-5 justify-center items-center pb-10">
       <div>
         <h1 className="text-3xl font-courier-prime">Personal Projects</h1>
       </div>
-      <div className="px-11 flex items-stretch w-full flex-col items-center justify-center gap-5 md:flex-wrap md:flex-row">
+      <div className="overflow-hidden flex flex-col flex-wrap gap-5 max-w-full lg:flex-row lg:justify-center">
         {randomArray.map((value) => (
           <SquareBlurb>
             <ProjectBox

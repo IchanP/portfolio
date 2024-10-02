@@ -1,6 +1,6 @@
 const SquareBlurb = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="flex-grow dark:bg-darkPrimary w-1/4 bg-lightPrimary p-4 rounded-md hover:bg-lightHover dark:hover:bg-darkHover">
+    <div className="overflow-hidden w-full dark:bg-darkPrimary p-2 rounded-md bg-lightPrimary hover:bg-lightHover dark:hover:bg-darkHover lg:w-3/4 xl:w-5/12 2xl:w-1/3">
       {children}
     </div>
   );
