@@ -8,7 +8,6 @@
       "editor.formatOnSave": true,
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "files.eol": "\n",
     "[javascript]": {
         "editor.defaultFormatter": "dbaeumer.vscode-eslint"
     },
@@ -16,6 +15,9 @@
       "messages",
       "src/i18n"
     ],
-    "i18n-ally.keystyle": "nested"
+    "i18n-ally.keystyle": "nested",
+      "files.eol": "\n",
+      "prettier.endOfLine": "lf"
+
   }
   
