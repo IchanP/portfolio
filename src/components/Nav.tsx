@@ -12,7 +12,7 @@ const Nav = () => {
   return (
     <>
       {tNavItems.map(({ key, href }) => (
-        <MenuDiv key={key} hoverOnLarge={true}>
+        <MenuDiv key={key} hoverOnLarge={false}>
           <NavItem key={key + href} title={t(key)} href={href} />
         </MenuDiv>
       ))}

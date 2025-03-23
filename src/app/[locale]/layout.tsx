@@ -6,6 +6,7 @@ import Header from "../../components/Header";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import Footer from "components/Footer";
+import { Roboto } from "next/font/google";
 
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
@@ -18,6 +19,18 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+const roboto = Roboto({
+  subsets: ["latin"],
+  variable: "--font-roboto",
+  weight: "500",
+});
+
+const lexendExtraBold = localFont({
+  src: "../fonts/Lexend-ExtraBold.ttf",
+  variable: "--font-lexend",
+  weight: "100, 900",
+});
+
 const courierPrime = localFont({
   src: "../fonts/CourierPrime-BoldItalic.ttf",
   variable: "--font-courier",
@@ -25,8 +38,8 @@ const courierPrime = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio for Pontus Grandin",
-  description: "Web Developer",
+  title: "Pontus Grandin | Fullstack JavaScript Developer",
+  description: "Portfolio for the JavaScript Developer Pontus Grandin",
 };
 
 export default async function RootLayout({
@@ -40,7 +53,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${courierPrime.variable} flex flex-col min-h-screen antialiased bg-lightbg text-black dark:bg-darkbg dark:text-white`}
+        className={`${geistSans.variable} ${roboto.variable} ${lexendExtraBold.variable} ${geistMono.variable} ${courierPrime.variable} flex flex-col min-h-screen antialiased bg-lightbg text-black dark:bg-darkbg dark:text-white`}
       >
         <Providers>
           <NextIntlClientProvider messages={messages}>

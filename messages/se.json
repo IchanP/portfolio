@@ -18,5 +18,8 @@
             "title": "Repub",
             "summary": "En anpassningsbar Epub läsare på webben. Målet är att erbjdua en mycket anpassningsbar Epub läsare på nätet, med liknande funktioner som kan återfinnas i en nativ app. Du förser böckerna! Byggt med Nextjs ovanpå Epubjs."
         }
+    },
+    "Name": {
+        "my_name": "Pontus Grandin"
     }
 }

@@ -26,6 +26,8 @@ const config: Config = {
           "Noto Color Emoji",
           "sans-serif",
         ],
+        lexend: "var(--font-lexend)",
+        roboto: "var(--font-roboto)",
         "courier-prime": "var(--font-courier)",
       },
     },
