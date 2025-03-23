@@ -15,7 +15,7 @@ const IconText = ({ iconSource, alt, text }: IconTextProps) => {
         width={40}
         height={40}
         layout="intrinsic"
-        className="w-8 h-6 sm:w-10 sm:h-8 md:w-12 md:h-10"
+        className="w-8 h-6 sm:w-10 sm:h-8 md:w-10 md:h-8"
       />
       <p>{text}</p>
     </div>

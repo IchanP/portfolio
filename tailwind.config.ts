@@ -14,10 +14,10 @@ const config: Config = {
         lightPrimary: "#e2e0e0",
         lightSecondary: "rgba(173, 170, 173, 0.4)",
         lightHover: "#D1D5DB",
-        darkbg: "#020305",
-        darkPrimary: "#1d1c1c",
-        darkSecondary: "rgba(65, 61, 61, 0.75)",
-        darkHover: "#262c36",
+        darkbg: "rgb(18, 18, 18)" /* Slightly adjusted dark background */,
+        darkPrimary: "rgb(80, 11, 64)" /* Deep purple primary color */,
+        darkSecondary: "rgb(65, 61, 64)" /* Complementary neutral dark color */,
+        darkHover: "rgb(109, 30, 105)" /* Lighter shade for hover effect */,
       },
       fontFamily: {
         emoji: [
