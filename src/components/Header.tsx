@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <header className="flex flex-col md:flex-row md:py-5 items-center bg-lightPrimary dark:bg-darkPrimary ">
-      <div className="items-center md:pl-24 md:block hidden font-lexend">
+      <div className="items-center md:pl-96 md:block hidden font-lexend">
         <a href="/" className="font-bold md:text-3xl">
           {t("my_name")}
         </a>

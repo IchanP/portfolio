@@ -26,7 +26,7 @@ const roboto = Roboto({
 });
 
 const lexendExtraBold = localFont({
-  src: "../fonts/Lexend-ExtraBold.ttf",
+  src: "../fonts/Lexend-Bold.ttf",
   variable: "--font-lexend",
   weight: "100, 900",
 });
