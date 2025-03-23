@@ -1,13 +1,9 @@
-import { useTranslations } from "next-intl";
-const currentYear = new Date().getFullYear();
-
-const CopyRight = () => {
-  const t = useTranslations("Name");
+const SmallSubudedText = ({ text }: { text: string }) => {
   return (
-    <p className="text-sm text-center">
-      © {currentYear}, {t("my_name")}
+    <p className="text-sm text-center text-gray-500 dark:text-black-200">
+      {text}
     </p>
   );
 };
 
-export default CopyRight;
+export default SmallSubudedText;
