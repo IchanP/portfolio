@@ -30,6 +30,9 @@ const config: Config = {
         roboto: "var(--font-roboto)",
         "courier-prime": "var(--font-courier)",
       },
+      borderRadius: {
+        large: "2rem",
+      },
     },
   },
   plugins: [],
