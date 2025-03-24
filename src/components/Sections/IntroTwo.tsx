@@ -5,13 +5,13 @@ const IntroTwo = () => {
   return (
     <RoundedDiv>
       <div className="flex justify-center items-center h-full p-3">
-        <div className="relative w-2/4 h-full">
+        <div className="relative md:w-2/4 md:pt-[50%] w-3/4 pt-[75%] absolute inset-0 overflow-hidden rounded-full">
+          {/* Ensure the container is square and has overflow hidden */}
           <Image
             src="/toradora-test.jpeg"
             alt="An image of Pontus Grandin"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-full outline outline-offset-2 outline-black"
+            fill={true}
+            className="object-cover"
           />
         </div>
       </div>
