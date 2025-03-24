@@ -14,8 +14,9 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  // TODO this needs a full rewrite basically
   return (
-    <header className="flex flex-col md:flex-row md:py-5 items-center md:bg-lightPrimary md:dark:bg-darkPrimary ">
+    <header className="sticky top-0 md:relative flex flex-col md:flex-row md:py-5 items-center md:bg-lightPrimary md:dark:bg-darkPrimary ">
       <div className="items-center md:pl-72 w-full md:block hidden font-lexend">
         <a href="/" className="font-bold md:text-3xl">
           {t("my_name")}

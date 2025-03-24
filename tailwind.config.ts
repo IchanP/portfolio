@@ -16,7 +16,7 @@ const config: Config = {
         lightHover: "#D1D5DB",
         darkbg: "rgb(18, 18, 18)" /* Slightly adjusted dark background */,
         darkPrimary: "rgb(80, 11, 64)" /* Deep purple primary color */,
-        darkSecondary: "rgb(65, 61, 64)" /* Complementary neutral dark color */,
+        darkSecondary: "rgb(70, 68, 69)" /* Complementary neutral dark color */,
         darkHover: "rgb(109, 30, 105)" /* Lighter shade for hover effect */,
       },
       fontFamily: {
