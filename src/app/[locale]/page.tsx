@@ -1,5 +1,5 @@
 // TODO break out into child components to remove use client
-import Intro from "components/logic/Intro";
+import Intro from "components/Sections/Intro";
 
 export default function Home() {
   // const t = useTranslations("HomePage");
