@@ -1,21 +1,20 @@
 import RoundedDiv from "components/ui/RoundedDiv";
-import Image from "next/image";
+import RoundedImage from "components/ui/RoundedImage";
 
 const IntroTwo = () => {
   return (
-    <RoundedDiv>
-      <div className="flex justify-center items-center h-full p-3">
-        <div className="relative md:w-2/4 md:pt-[50%] w-3/4 pt-[75%] absolute inset-0 overflow-hidden rounded-full">
-          {/* Ensure the container is square and has overflow hidden */}
-          <Image
+    <div className="flex flex-col md:ml-24">
+      <RoundedDiv>
+        <div className="flex justify-center items-center p-3 px-12">
+          <RoundedImage
             src="/toradora-test.jpeg"
-            alt="An image of Pontus Grandin"
-            fill={true}
-            className="object-cover"
+            altText="A yellow JavaScript logo"
+            ratio="75%"
+            mdRatio="91%"
           />
         </div>
-      </div>
-    </RoundedDiv>
+      </RoundedDiv>
+    </div>
   );
 };
 

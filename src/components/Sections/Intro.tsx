@@ -11,7 +11,7 @@ const Intro = () => {
       <h1 className="text-4xl text-center">Hi, I'm {t("my_name")}!</h1>
       <SmallSubudedText text="Fullstack JavaScript Developer" />
       {/* TODO maybe make a generic <p> component? */}
-      <p className="mb-5">
+      <p className="mb-5 text-justify">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
