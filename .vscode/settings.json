@@ -17,7 +17,8 @@
     ],
     "i18n-ally.keystyle": "nested",
       "files.eol": "\n",
-      "prettier.endOfLine": "lf"
+      "prettier.endOfLine": "lf",
+      "commentTranslate.browse.mode": "inplace"
 
   }
   

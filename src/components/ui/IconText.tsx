@@ -8,7 +8,6 @@ interface IconTextProps {
 }
 
 const IconText = ({ iconSource, alt, text }: IconTextProps) => {
-  // TODO turn div into a button and wrap it in a form to download.
   return (
     <div className="flex flex-row justify-center items-center gap-3 cursor-pointer">
       <Image

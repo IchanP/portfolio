@@ -8,27 +8,23 @@ import classNames from "classnames";
  * @param {Object} props - The component's props.
  * @param {string} props.src - The source URL of the image.
  * @param {string} props.altText - The alternative text for the image.
- * @param {string} props.ratio - The aspect ratio of the image for small screens.
- * Expected to be in a percentage format like 50% or 25%
- * @param {string} props.mdRatio - The aspect ratio of the image for medium and larger screens.
+ * @param {string} props.ratio - The aspect ratios in Tailwind CSS format. This field is directly applied as a classname.
+ * Example: `md:w-[75%] md:pt-[75%] w-[25%] pt-[25%] z-0`
  * @returns {JSX.Element} The rendered RoundedImage component.
  */
 const RoundedImage = ({
   src,
   altText,
   ratio,
-  mdRatio,
 }: {
   src: string;
   altText: string;
   ratio: string;
-  mdRatio: string;
 }) => {
+  // TODO fix this
   return (
     <div
-      className={classNames(
-        `relative md:w-[${mdRatio}] md:pt-[${mdRatio}] w-[${ratio}] pt-[${ratio}] absolute inset-0 overflow-hidden rounded-full`,
-      )}
+      className={classNames(`relative overflow-hidden rounded-full z-0`, ratio)}
     >
       <Image src={src} alt={altText} fill={true} className="object-cover" />
     </div>

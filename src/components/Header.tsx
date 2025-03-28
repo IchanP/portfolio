@@ -14,9 +14,8 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // TODO this needs a full rewrite basically
   return (
-    <header className="sticky top-0 md:relative flex flex-col md:flex-row md:py-5 items-center md:bg-lightPrimary md:dark:bg-darkPrimary ">
+    <header className="sticky top-0 md:relative flex flex-col md:flex-row md:py-5 items-center md:bg-lightPrimary md:dark:bg-darkPrimary z-10">
       <div className="items-center md:pl-72 w-full md:block hidden font-lexend">
         <a href="/" className="font-bold md:text-3xl">
           {t("my_name")}
@@ -43,14 +42,15 @@ const Header = () => {
           ></path>
         </svg>
       </button>
+      {/* TODO update the transition */}
       <div
         className={`w-full flex flex-col md:flex-row bg-lightPrimary dark:bg-darkPrimary transform transition-transform duration-300 ${
           isMenuOpen ? "translate-y-0" : "-translate-y-full md:translate-y-0"
         }`}
       >
         <div
-          className={`items-center justify-end w-full ,ms md:w-auto md:flex-grow
-           md:flex md:mr-5 md:ml-10 md:flex-row md:w-auto 
+          className={`items-center justify-end w-full md:w-auto md:flex-grow
+           md:flex md:mr-5 md:ml-10 md:flex-row md:w-auto
           ${isMenuOpen ? "flex flex-col" : "hidden"} md:block`}
         >
           <Nav />
