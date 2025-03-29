@@ -1,7 +1,7 @@
 "use client";
 import { useImageLoader } from "hooks/imageLoader";
-import ExternalLinkOpener from "./logic/ExternalLinkOpener";
-import HoverableImage from "./ui/HoverableImage";
+import ExternalLinkOpener from "./ExternalLinkOpener";
+import HoverableImage from "../ui/HoverableImage";
 import { externalIcons } from "data/techStack";
 
 const TechStack = () => {

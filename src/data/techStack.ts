@@ -57,7 +57,16 @@ export const externalIcons: ExternalIconLink[] = [
   },
 ];
 
-interface ExternalIconLink {
+export const jsStack: ExternalIconLink = {
+  href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  src: {
+    lightmode: "/stack/js_logo.svg",
+    darkmode: "/stack/js_logo_darkmode.svg",
+  },
+  alt: "JavaScript",
+};
+
+export interface ExternalIconLink {
   href: string;
   src: {
     darkmode: string;

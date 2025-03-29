@@ -9,7 +9,8 @@ const IntroTwo = () => {
           <RoundedImage
             src="/toradora-test.jpeg"
             altText="A yellow JavaScript logo"
-            ratio="md:w-[66%] md:pt-[66%] w-[75%] pt-[75%]"
+            ratio="md:w-[66%] md:pt-[66%] w-[75%] 
+            pt-[75%] shadow-[0_0_30px_10px_rgba(0,0,0,0.3)]"
           />
         </div>
       </RoundedDiv>

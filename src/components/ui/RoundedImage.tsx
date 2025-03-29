@@ -21,12 +21,11 @@ const RoundedImage = ({
   altText: string;
   ratio: string;
 }) => {
-  // TODO fix this
   return (
     <div
       className={classNames(`relative overflow-hidden rounded-full z-0`, ratio)}
     >
-      <Image src={src} alt={altText} fill={true} className="object-cover" />
+      <Image src={src} alt={altText} fill={true} className="object-cover " />
     </div>
   );
 };
