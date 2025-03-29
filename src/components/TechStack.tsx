@@ -6,7 +6,7 @@ import { externalIcons } from "data/techStack";
 
 const TechStack = () => {
   return (
-    <div className="w-full flex flex-row flex-wrap items-center justify-center">
+    <div className="w-full flex flex-row md:gap-16 flex-wrap items-center justify-center">
       {externalIcons.map((icon) => {
         const { src, onError } = useImageLoader({
           src: icon.src,
@@ -15,7 +15,7 @@ const TechStack = () => {
 
         return (
           <div
-            className="w-1/3 flex flex-col mb-10 items-center"
+            className="w-1/3 md:w-auto flex flex-col mb-10 items-center"
             key={icon.alt}
           >
             <ExternalLinkOpener href={icon.href}>

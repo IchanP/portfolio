@@ -1,3 +1,4 @@
+// TODO this shit don't work
 import { useEffect } from "react";
 import { create } from "zustand";
 

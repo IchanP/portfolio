@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import RoundedIconButton from "components/ui/RoundedIconButton";
 import Downloader from "components/logic/Downloader";
 import JustifiedText from "components/ui/JustifiedText";
+import FontText from "components/ui/FontText";
 
 const Intro = () => {
   const t = useTranslations("Name");
@@ -13,14 +14,14 @@ const Intro = () => {
       <SmallSubudedText text="Fullstack JavaScript Developer" />
       {/* TODO maybe make a generic <p> component? */}
       <JustifiedText>
-        <p>
+        <FontText>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat. Duis aute irure dolor in
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur.
-        </p>
+        </FontText>
       </JustifiedText>
       <div className="mt-5 flex flex-row">
         <Downloader filePath="/cv/Pontus Grandin CV.pdf">
