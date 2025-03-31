@@ -9,13 +9,13 @@ export default function Home() {
         id="home"
         className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-5 max-w-6xl w-full"
       >
-        <div className="h-82 overflow-hidden">
+        <div className="h-82 scroll_item overflow-hidden">
           <Intro />
         </div>
-        <div className="h-82 overflow-hidden">
+        <div className="h-82 scroll_item overflow-hidden">
           <IntroTwo />
         </div>
-        <div className="md:col-span-2 mt-10">
+        <div className="md:col-span-2 scroll_item mt-10">
           <ProfileBlurb />
         </div>
       </div>
