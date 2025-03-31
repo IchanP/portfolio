@@ -7,26 +7,27 @@
     text-wrap: balance;
   }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .scroll_item {
-    opacity: 0;
-    scale: 0.8;
-    animation: fade-in-out linear forwards;
-    animation-timeline: view();
-    animation-range-start: cover 50px;
-    animation-range-end: cover 100%;
-  }
-
-  @keyframes fade-in-out {
-    0%, 100% {
+/* Feature query to check for support of animation-timeline */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .scroll_item {
       opacity: 0;
       scale: 0.8;
+      animation: fade-in-out linear forwards;
+      animation-timeline: view();
+      animation-range-start: cover 10%;
+      animation-range-end: cover 100%;
     }
-    /* TODO might need to change the 10% */
-    10%, 80% {
-      opacity: 1;
-      scale: 1;
+
+    @keyframes fade-in-out {
+      0%, 100% {
+        opacity: 0;
+        scale: 0.8;
+      }
+      20%, 80% {
+        opacity: 1;
+        scale: 1;
+      }
     }
   }
 }
