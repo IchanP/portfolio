@@ -7,7 +7,6 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import Footer from "components/Footer";
 import { Roboto } from "next/font/google";
-import Script from "next/script";
 
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
