@@ -1,6 +1,8 @@
+import InterestOne from "components/Sections/InterestOne";
 import Intro from "components/Sections/Intro";
 import IntroTwo from "components/Sections/IntroTwo";
-import ProfileBlurb from "components/Sections/ProfileBlurb";
+import ProfileBlurb from "components/Sections/profile/ProfileBlurb";
+import ColoredHeader from "components/ui/ColoredHeader";
 
 export default function Home() {
   return (
@@ -17,6 +19,13 @@ export default function Home() {
         </div>
         <div className="md:col-span-2 scroll_item mt-10">
           <ProfileBlurb />
+        </div>
+        <div
+          id="about"
+          className="md:col-span-2 items-center justify-center flex flex-col gap-5 scroll_item mt-10"
+        >
+          <ColoredHeader text="About me" />
+          <InterestOne />
         </div>
       </div>
     </div>

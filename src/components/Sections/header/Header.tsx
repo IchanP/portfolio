@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
-import LocaleToggleButton from "./logic/LocaleToggle";
-import MenuDiv from "./ui/MenuDiv";
+import LocaleToggleButton from "../../logic/LocaleToggle";
+import MenuDiv from "../../ui/MenuDiv";
 import Nav from "./Nav";
-import ThemeSwitcher from "./logic/ThemeSwitcher";
+import ThemeSwitcher from "../../logic/ThemeSwitcher";
 import { useTranslations } from "next-intl";
 
 const Header = () => {

@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "../globals.css";
 import { Providers } from "../providers";
-import Header from "../../components/Header";
+import Header from "../../components/Sections/header/Header";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import Footer from "components/Footer";
+import Footer from "components/Sections/footer/Footer";
 import { Roboto } from "next/font/google";
 
 const geistSans = localFont({

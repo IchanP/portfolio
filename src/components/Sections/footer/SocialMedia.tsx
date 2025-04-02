@@ -1,7 +1,7 @@
 "use client";
-import IconText from "./ui/IconText";
+import IconText from "../../ui/IconText";
 import { useIsDarkmode } from "stores/DarkModeState";
-import ExternalLinkOpener from "./logic/ExternalLinkOpener";
+import ExternalLinkOpener from "../../logic/ExternalLinkOpener";
 
 const SocialMedia = () => {
   const isDarkMode = useIsDarkmode((state) => state.isDarkMode);

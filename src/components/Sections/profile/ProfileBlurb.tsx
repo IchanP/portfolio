@@ -1,4 +1,4 @@
-import Introduction from "components/Introduction";
+import Introduction from "components/Sections/profile/Introduction";
 import RoundedImgThemeWrapper from "components/logic/RoundedImageWrapper";
 import TechStack from "components/logic/TechStack";
 import RoundedDiv from "components/ui/RoundedDiv";
@@ -8,7 +8,7 @@ const ProfileBlurb = () => {
   return (
     <>
       <RoundedDiv>
-        <div className="flex flex-col py-8 gap-24 md:gap-5 md:flex-row items-center md:justify-center py-5 md:pt-14">
+        <div className="flex flex-col py-8 gap-24 md:gap-5 md:flex-row items-center md:justify-center md:pt-14">
           <div className="md:flex-1 w-full h-36 flex flex-col md:flex-row md:justify-center items-center">
             <RoundedImgThemeWrapper
               imgData={jsStack}
@@ -19,7 +19,7 @@ const ProfileBlurb = () => {
             <Introduction />
           </div>
         </div>
-        <div className="md:mt-5">
+        <div className="md:mt-10">
           <TechStack />
         </div>
       </RoundedDiv>

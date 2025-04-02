@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import NavItem from "./NavItem";
-import MenuDiv from "./ui/MenuDiv";
+import MenuDiv from "../../ui/MenuDiv";
 
 const Nav = () => {
   const t = useTranslations("Navigation");

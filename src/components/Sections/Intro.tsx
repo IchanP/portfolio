@@ -1,4 +1,4 @@
-import SmallSubudedText from "components/ui/CopyRIght";
+import SmallSubudedText from "components/ui/SmallSubduedText";
 import { useTranslations } from "next-intl";
 import RoundedIconButton from "components/ui/RoundedIconButton";
 import Downloader from "components/logic/Downloader";
@@ -12,7 +12,6 @@ const Intro = () => {
       {/* TODO grab more than just name from T */}
       <h1 className="text-4xl text-center">Hi, I'm {t("my_name")}!</h1>
       <SmallSubudedText text="Fullstack JavaScript Developer" />
-      {/* TODO maybe make a generic <p> component? */}
       <JustifiedText>
         <FontText>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

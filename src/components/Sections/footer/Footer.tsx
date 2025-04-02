@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import SocialMedia from "./SocialMedia";
-import SmallSubudedText from "./ui/CopyRIght";
+import SmallSubudedText from "../../ui/SmallSubduedText";
 
 const currentYear = new Date().getFullYear();
 

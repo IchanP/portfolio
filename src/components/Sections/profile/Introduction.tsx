@@ -1,6 +1,6 @@
-import ColoredHeader from "./ui/ColoredHeader";
-import FontText from "./ui/FontText";
-import JustifiedText from "./ui/JustifiedText";
+import ColoredHeader from "../../ui/ColoredHeader";
+import FontText from "../../ui/FontText";
+import JustifiedText from "../../ui/JustifiedText";
 
 const Introduction = () => {
   return (
