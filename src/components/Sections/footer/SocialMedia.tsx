@@ -10,7 +10,7 @@ const SocialMedia = () => {
     <div className="flex flex-col gap-1 items-center md:justify-center">
       <div className="flex flex-row gap-3 items-center">
         <ExternalLinkOpener href="https://www.linkedin.com/in/pontus-grandin-13133b312/">
-          <IconText iconSource="/ln-blue-40.png" alt="LinkedIn" />
+          <IconText iconSource="/linkedin.svg" alt="LinkedIn" />
         </ExternalLinkOpener>
         <ExternalLinkOpener href="mailto:pontusgrandin@proton.me">
           <IconText iconSource="/gmail.svg" alt="Gmail" />

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "../globals.css";
-import { Providers } from "../providers";
+import { TopLevelProviders } from "../providers";
 import Header from "../../components/Sections/header/Header";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
@@ -55,7 +55,7 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${roboto.variable} ${lexendExtraBold.variable} ${geistMono.variable} ${courierPrime.variable} flex flex-col min-h-screen antialiased bg-lightbg text-black dark:bg-darkbg dark:text-white`}
       >
-        <Providers>
+        <TopLevelProviders>
           <NextIntlClientProvider messages={messages}>
             <Header />
             <div className="flex-grow grid grid-rows-[1px_1fr_1px] p-4 pt-8 sm:p-8 sm:pt-0 gap-8 sm:gap-16 font-[family-name:var(--font-geist-sans)]">
@@ -67,7 +67,7 @@ export default async function RootLayout({
               <Footer />
             </footer>
           </NextIntlClientProvider>
-        </Providers>
+        </TopLevelProviders>
       </body>
     </html>
   );
