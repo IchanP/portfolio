@@ -3,7 +3,6 @@ import ColoredHeader from "components/ui/ColoredHeader";
 import FontText from "components/ui/FontText";
 import HoverTiles from "components/specials/HoverTiles";
 import JustifiedText from "components/ui/JustifiedText";
-import RoundedDiv from "components/ui/RoundedDiv";
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Interest from "components/ui/Interest";
