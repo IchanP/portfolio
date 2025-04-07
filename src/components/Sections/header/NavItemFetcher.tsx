@@ -20,15 +20,15 @@ const NavItemFetcher = () => {
         <CloseButton />
       </div>
       {tNavItems.map(({ key, href }) => (
-        <MenuDiv key={key} hoverOnLarge={false}>
+        <MenuDiv key={key}>
           <NavItem key={key + href} title={t(key)} href={href} />
         </MenuDiv>
       ))}
       <div className="w-full md:w-auto md:flex md:flex-row gap-5 md:mr-5">
-        <MenuDiv hoverOnLarge={false}>
+        <MenuDiv>
           <ThemeSwitcher />
         </MenuDiv>
-        <MenuDiv hoverOnLarge={false}>
+        <MenuDiv>
           <LocaleToggleButton />
         </MenuDiv>
       </div>
