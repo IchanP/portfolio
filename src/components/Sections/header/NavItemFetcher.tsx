@@ -1,9 +1,7 @@
 import { useTranslations } from "next-intl";
 import NavItem from "./NavItem";
 import MenuDiv from "../../ui/MenuDiv";
-import ThemeSwitcher from "components/logic/ThemeSwitcher";
-import LocaleToggleButton from "components/logic/LocaleToggle";
-import CloseButton from "./CloseButton";
+import NavToggles from "./NavToggles";
 
 const NavItemFetcher = () => {
   const t = useTranslations("Navigation");
@@ -16,22 +14,12 @@ const NavItemFetcher = () => {
 
   return (
     <>
-      <div className="md:hidden w-full">
-        <CloseButton />
-      </div>
       {tNavItems.map(({ key, href }) => (
         <MenuDiv key={key}>
           <NavItem key={key + href} title={t(key)} href={href} />
         </MenuDiv>
       ))}
-      <div className="w-full md:w-auto md:flex md:flex-row gap-5 md:mr-5">
-        <MenuDiv>
-          <ThemeSwitcher />
-        </MenuDiv>
-        <MenuDiv>
-          <LocaleToggleButton />
-        </MenuDiv>
-      </div>
+      <NavToggles />
     </>
   );
 };
