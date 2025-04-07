@@ -21,6 +21,7 @@ const RoundedImage = ({
   altText: string;
   ratio: string;
 }) => {
+  console.log("Test");
   return (
     <div
       className={classNames(`relative overflow-hidden rounded-full z-0`, ratio)}

@@ -12,8 +12,8 @@ const config: Config = {
       colors: {
         lightbg: "#f5f5f5",
         lightPrimary: "#e2e0e0",
-        lightSecondary: "rgba(173, 170, 173, 0.4)",
         lightHover: "#D1D5DB",
+        blueAccent: "#0288D1",
         darkbg: "rgb(18, 18, 18)" /* Slightly adjusted dark background */,
         darkPrimary: "rgb(80, 11, 64)" /* Deep purple primary color */,
         darkSecondary: "rgb(70, 68, 69)" /* Complementary neutral dark color */,
