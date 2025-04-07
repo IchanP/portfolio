@@ -26,12 +26,19 @@ const config: Config = {
           "Noto Color Emoji",
           "sans-serif",
         ],
-        lexend: "var(--font-lexend)",
-        roboto: "var(--font-roboto)",
-        "courier-prime": "var(--font-courier)",
+        ovo: "var(--font-ovo)",
       },
       borderRadius: {
         large: "2rem",
+      },
+      keyframes: {
+        scrollInFromTop: {
+          "0%": { transform: "translateY(-100%)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+      },
+      animation: {
+        scrollInFromTop: "scrollInFromTop 0.5s ease-out",
       },
     },
   },

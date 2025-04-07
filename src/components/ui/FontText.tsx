@@ -1,5 +1,5 @@
 const FontText = ({ children }: { children: React.ReactNode }) => {
-  return <p>{children}</p>;
+  return <p className="font-ovo">{children}</p>;
 };
 
 export default FontText;

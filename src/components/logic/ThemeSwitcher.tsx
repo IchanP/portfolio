@@ -32,7 +32,9 @@ const ThemeSwitcher = () => {
   return (
     <button
       onClick={handleThemeSwitch}
-      className="h-full w-full flex justify-center items-center bg-lightPrimary dark:bg-darkPrimary hover:bg-lightHover dark:hover:bg-darkHover transition-colors md:p-3 md:rounded-full md:w-auto"
+      className="h-full w-full flex justify-center items-center bg-lightPrimary 
+      dark:bg-darkPrimary hover:bg-lightHover dark:hover:bg-darkHover 
+      transition-colors md:p-3 md:rounded-full md:w-auto"
       aria-label="Toggle Dark Mode"
     >
       {theme === dark ? (

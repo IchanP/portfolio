@@ -7,6 +7,12 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import Footer from "components/Sections/footer/Footer";
 
+const ovoRegular = localFont({
+  src: "../fonts/Ovo-Regular.ttf",
+  variable: "--font-ovo",
+  weight: "400",
+});
+
 export default async function RootLayout({
   children,
   params: { locale },
@@ -18,7 +24,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`flex flex-col min-h-screen antialiased bg-lightbg text-black dark:bg-darkbg dark:text-white`}
+        className={`${ovoRegular.variable} flex flex-col min-h-screen antialiased bg-lightbg text-black dark:bg-darkbg dark:text-white`}
       >
         <TopLevelProviders>
           <NextIntlClientProvider messages={messages}>

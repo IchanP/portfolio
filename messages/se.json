@@ -6,9 +6,8 @@
     },
     "Navigation": {
         "home": "Hem",
-        "about": "Om mig",
-        "school_projects": "Kursarbeten",
-        "personal_projects": "Projekt"
+        "personal_projects": "Projekt",
+        "contact": "Kontakta mig"
     },
     "SocialMedia": {
         "find_me": "Finn eller kontakta mig här!"

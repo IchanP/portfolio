@@ -7,27 +7,14 @@
     text-wrap: balance;
   }
 }
-/* Feature query to check for support of animation-timeline */
-@supports (animation-timeline: view()) {
-  @media (prefers-reduced-motion: no-preference) {
-    .scroll_item {
-      opacity: 0;
-      scale: 0.8;
-      animation: fade-in-out linear forwards;
-      animation-timeline: view();
-      animation-range-start: cover 10%;
-      animation-range-end: cover 100%;
-    }
 
-    @keyframes fade-in-out {
-      0%, 100% {
-        opacity: 0;
-        scale: 0.8;
-      }
-      20%, 80% {
-        opacity: 1;
-        scale: 1;
-      }
-    }
+@keyframes scrollInFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

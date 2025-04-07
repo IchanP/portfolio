@@ -6,9 +6,8 @@
     },
     "Navigation": {
         "home": "Home",
-        "about": "About me",
-        "school_projects": "Course work",
-        "personal_projects": "Projects"
+        "personal_projects": "Projects",
+        "contact": "Contact"
     },
     "SocialMedia": {
         "find_me": "Find or contact me here!"
