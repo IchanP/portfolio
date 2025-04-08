@@ -1,6 +1,6 @@
 const JustifiedText = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="flex flex-col gap-5 items-center text-justify">
+    <div className="flex flex-col gap-5 items-center opacity-85">
       {children}
     </div>
   );

@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "../globals.css";
 import { TopLevelProviders } from "../providers";
@@ -13,6 +12,11 @@ const ovoRegular = localFont({
   weight: "400",
 });
 
+const outfit = localFont({
+  src: "../fonts/Outfit-VariableFont_wght.ttf",
+  variable: "--font-outfit",
+});
+
 export default async function RootLayout({
   children,
   params: { locale },
@@ -24,7 +28,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${ovoRegular.variable} flex flex-col min-h-screen antialiased bg-lightbg text-black dark:bg-darkbg dark:text-white`}
+        className={`${ovoRegular.variable} ${outfit.variable} flex flex-col min-h-screen antialiased bg-lightbg text-black dark:bg-darkbg dark:text-white`}
       >
         <TopLevelProviders>
           <NextIntlClientProvider messages={messages}>

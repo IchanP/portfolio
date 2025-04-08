@@ -27,6 +27,7 @@ const config: Config = {
           "sans-serif",
         ],
         ovo: "var(--font-ovo)",
+        outfit: "var(--font-outfit)",
       },
       borderRadius: {
         large: "2rem",

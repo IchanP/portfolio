@@ -1,6 +1,19 @@
-const SmallSubudedText = ({ text }: { text: string }) => {
+import classNames from "classnames";
+
+const SmallSubudedText = ({
+  text,
+  textColor,
+}: {
+  text: string;
+  textColor: string;
+}) => {
   return (
-    <p className="text-sm text-center text-gray-500 dark:text-black-200">
+    <p
+      className={classNames(
+        "text-sm text-center dark:text-black-200",
+        textColor,
+      )}
+    >
       {text}
     </p>
   );

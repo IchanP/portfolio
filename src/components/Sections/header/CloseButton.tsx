@@ -7,7 +7,7 @@ const CloseButton = () => {
   const { handleMenuState } = useMenu();
 
   return (
-    <MenuDiv hoverOnLarge={false}>
+    <MenuDiv>
       <div className="flex w-full flex-row items-end justify-end">
         <button onClick={handleMenuState} className="px-2 mr-2">
           <Image
