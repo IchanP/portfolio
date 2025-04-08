@@ -9,10 +9,9 @@ const IntroLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div
       className="grid grid-cols-1
-     place-items-center md:mt-[-10%] mt-5 md:gap-10 
-    h-screen md:grid-cols-2 md:col-span-2 w-full
-    gap-[0rem]
-    "
+      place-items-center md:gap-10 
+      h-full md:grid-cols-2 md:col-span-2 mx-page
+      gap-[0rem]"
     >
       {children}
     </div>

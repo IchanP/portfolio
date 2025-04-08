@@ -33,8 +33,8 @@ export default async function RootLayout({
         <TopLevelProviders>
           <NextIntlClientProvider messages={messages}>
             <Header />
-            <div className="flex-grow grid grid-rows-[1px_1fr_1px] p-4 pt-8 sm:p-8 sm:pt-0 gap-8 sm:gap-16 font-[family-name:var(--font-geist-sans)]">
-              <main className="flex w-full flex-row justify-center gap-4 sm:gap-8 row-start-2 items-center sm:items-start">
+            <div className="">
+              <main className="flex w-full flex-row justify-center items-center">
                 {children}
               </main>
             </div>

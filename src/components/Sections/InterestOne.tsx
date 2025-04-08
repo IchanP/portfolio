@@ -19,44 +19,46 @@ const InterestOne = () => {
   }, []);
 
   return (
-    <Interest>
-      <div
-        ref={textContainerRef}
-        className="mx-10 flex flex-col items-center gap-5 md:w-7/12"
-      >
-        <ColoredHeader text="Learning" />
-        <JustifiedText>
-          <FontText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            sed aliquam ex. Praesent tempor erat sit amet porta interdum. Proin
-            lobortis consequat efficitur. Fusce hendrerit sem eget enim sodales
-            feugiat. Orci varius natoque penatibus et magnis dis parturient
-            montes, nascetur ridiculus mus.
-          </FontText>
-          <FontText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            sed aliquam ex. Praesent tempor erat sit amet porta interdum. Proin
-            lobortis consequat efficitur. Fusce hendrerit sem eget enim sodales
-            feugiat. Orci varius natoque penatibus et magnis dis parturient
-            montes, nascetur ridiculus mus.
-          </FontText>
-        </JustifiedText>
-      </div>
-      <div
-        ref={hoverTilesContainerRef}
-        className="mx-6 relative w-3/4 md:w-5/12 overflow-y-clip h-full"
-      >
-        <div className="flex items-center justify-center h-full">
-          <Image
-            src="/stack/kubernetes.svg"
-            width={200}
-            height={200}
-            alt="image of taiga"
-          />
+    <div className="col-span-2">
+      <Interest>
+        <div
+          ref={textContainerRef}
+          className="mx-page flex flex-col items-center gap-5 md:w-7/12"
+        >
+          <ColoredHeader text="Learning" />
+          <JustifiedText>
+            <FontText>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              sed aliquam ex. Praesent tempor erat sit amet porta interdum.
+              Proin lobortis consequat efficitur. Fusce hendrerit sem eget enim
+              sodales feugiat. Orci varius natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus.
+            </FontText>
+            <FontText>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              sed aliquam ex. Praesent tempor erat sit amet porta interdum.
+              Proin lobortis consequat efficitur. Fusce hendrerit sem eget enim
+              sodales feugiat. Orci varius natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus.
+            </FontText>
+          </JustifiedText>
         </div>
-        {true && <HoverTiles tiles={300} />}
-      </div>
-    </Interest>
+        <div
+          ref={hoverTilesContainerRef}
+          className="mx-6 relative w-3/4 md:w-5/12 overflow-y-clip h-full"
+        >
+          <div className="flex items-center justify-center h-full">
+            <Image
+              src="/stack/kubernetes.svg"
+              width={200}
+              height={200}
+              alt="image of taiga"
+            />
+          </div>
+          {true && <HoverTiles tiles={300} />}
+        </div>
+      </Interest>
+    </div>
   );
 };
 
