@@ -1,4 +1,4 @@
-import InterestOne from "components/Sections/InterestOne";
+import InterestOne from "components/Sections/about_me/InterestOne";
 import IntroItems from "components/Sections/Intro/IntroItems";
 import PageSections from "components/ui/PageSections";
 export default function Home() {
