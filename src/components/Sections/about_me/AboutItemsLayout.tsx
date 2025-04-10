@@ -6,7 +6,7 @@ import FontText from "components/ui/FontText";
 const AboutItemsLayout = () => {
   return (
     <>
-      <div className="md:col-start-2 max-h-0">
+      <div className="md:col-start-2 md:max-h-0">
         <SectionHeadings subHeader="Introduction" sectionHeader="About me" />
       </div>
       <ImageLayout />

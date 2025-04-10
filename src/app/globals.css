@@ -25,7 +25,7 @@
 }
 
 .primary-bg {
- @apply md:bg-lightPrimary md:dark:bg-darkPrimary
+ @apply bg-lightPrimary dark:bg-darkPrimary
 }
 
 .flex-scol-mrow {
