@@ -12,7 +12,7 @@ const ButtonLink = ({
 }) => {
   // TODO - requires attention for darkmode
   const invertedColor = invertColor
-    ? "bg-[#27272a] hover:bg-black text-white"
+    ? "bg-[#27272a] hover:bg-black text-white dm-light-on-hover"
     : "";
   return (
     <>

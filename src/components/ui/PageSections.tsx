@@ -7,7 +7,7 @@ const PageSections = ({
 }) => {
   return (
     <div
-      className={`w-full flex items-center justify-center ${alternateColor ? " bg-lightPrimary" : ""}`}
+      className={`w-full centered-flex ${alternateColor ? "primary-bg" : "background"}`}
     >
       <div className="grid grid-cols-1 max-w-6xl md:grid-cols-2 h-screen">
         {children}

@@ -36,7 +36,7 @@ const IntroductionTextRenderer = ({
   content,
 }: IntroductionTextProps) => (
   <>
-    <h1 className="text-4xl font-ovo text-center">{intro}!</h1>
+    <h2 className="header-text">{intro}!</h2>
     <SmallSubudedText textColor="text-blueAccent" text={description} />
     <JustifiedText>{content}</JustifiedText>
   </>

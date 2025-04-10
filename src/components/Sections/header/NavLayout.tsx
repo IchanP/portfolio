@@ -7,11 +7,10 @@ const NavLayout = ({
 }) => {
   return (
     <div
-      className={`flex flex-col items-center justify-center bg-lightPrimary
-          absolute top-0 w-full shadow-[0_4px_4px_0px_rgba(0,0,0,0.25)]
-          animate-scrollInFromTop md:animate-none md:flex-row md:w-full
-          md:items-end md:justify-end md:py-2 md:items-center
-          ${isMenuOpen ? "md:flex" : "hidden md:flex"}`}
+      className={`centered-flex primary-bg absolute top-0 w-full 
+        shadow-[0_4px_4px_0px_rgba(0,0,0,0.25)] animate-scrollInFromTop
+         md:animate-none md:justify-end md:py-2 
+        ${isMenuOpen ? "md:flex" : "shide-mflex"}`}
     >
       {children}
     </div>

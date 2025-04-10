@@ -4,7 +4,7 @@ import LocaleToggleButton from "components/logic/LocaleToggle";
 
 const NavToggles = () => {
   return (
-    <div className="w-full md:w-auto md:flex md:flex-row gap-5 md:mr-5">
+    <div className="md-row md:w-auto gap-5 md:mr-5">
       <MenuDiv>
         <ThemeSwitcher />
       </MenuDiv>
