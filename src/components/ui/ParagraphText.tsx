@@ -1,4 +1,4 @@
-const JustifiedText = ({ children }: { children: React.ReactNode }) => {
+const ParagraphText = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="flex flex-col gap-5 items-center opacity-85">
       {children}
@@ -6,4 +6,4 @@ const JustifiedText = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default JustifiedText;
+export default ParagraphText;

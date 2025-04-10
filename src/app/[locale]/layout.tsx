@@ -27,14 +27,18 @@ export default async function RootLayout({
   const messages = await getMessages();
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className={`${ovoRegular.variable} ${outfit.variable} `}>
+      <body
+        className={`${ovoRegular.variable} ${outfit.variable} flex flex-col min-h-screen antialiased bg-lightbg text-black dark:bg-darkbg dark:text-white`}
+      >
         <TopLevelProviders>
           <NextIntlClientProvider messages={messages}>
             <Header />
-            <div>
-              <main>{children}</main>
+            <div className="">
+              <main className="flex w-full flex-row justify-center items-center">
+                {children}
+              </main>
             </div>
-            <footer className="w-full py-2 background">
+            <footer className="bottom-0 w-full py-2 bg-lightPrimary dark:bg-darkPrimary">
               <Footer />
             </footer>
           </NextIntlClientProvider>

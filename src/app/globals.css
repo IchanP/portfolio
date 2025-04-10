@@ -66,3 +66,7 @@
 .header-text {
   @apply text-4xl font-ovo text-center
 }
+
+.adaptive-two-grid {
+  @apply grid grid-cols-1 md:grid-cols-2
+}

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import FontText from "components/ui/FontText";
-import JustifiedText from "components/ui/JustifiedText";
+import ParagraphText from "components/ui/ParagraphText";
 import SmallSubudedText from "components/ui/SmallSubduedText";
 import { useTranslations } from "next-intl";
 
@@ -38,7 +38,7 @@ const IntroductionTextRenderer = ({
   <>
     <h2 className="header-text">{intro}!</h2>
     <SmallSubudedText textColor="text-blueAccent" text={description} />
-    <JustifiedText>{content}</JustifiedText>
+    <ParagraphText>{content}</ParagraphText>
   </>
 );
 
