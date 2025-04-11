@@ -9,7 +9,7 @@ const NavLayout = ({
     <div
       className={`centered-flex flex-scol-mrow primary-bg absolute top-0 w-full 
         shadow-[0_4px_4px_0px_rgba(0,0,0,0.25)] animate-scrollInFromTop
-         md:animate-none md:justify-end md:py-2 
+         md:animate-none md:justify-end md:py-2
         ${isMenuOpen ? "md:flex" : "shide-mflex"}`}
     >
       {children}
