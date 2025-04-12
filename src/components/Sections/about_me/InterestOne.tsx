@@ -1,11 +1,11 @@
 import SectionGrid from "components/Sections/about_me/SectionGrid";
-import AboutItemsLayout from "./AboutItemsLayout";
+import AboutItems from "./AboutItems";
 
 const InterestOne = () => {
   return (
     <>
       <SectionGrid>
-        <AboutItemsLayout />
+        <AboutItems />
       </SectionGrid>
     </>
   );

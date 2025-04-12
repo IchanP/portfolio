@@ -44,6 +44,9 @@ const config: Config = {
       animation: {
         scrollInFromTop: "scrollInFromTop 0.5s ease-out",
       },
+      screens: {
+        "2k-wide": "2400px",
+      },
     },
   },
   plugins: [],

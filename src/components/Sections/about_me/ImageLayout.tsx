@@ -2,7 +2,6 @@ import Image from "next/image";
 
 const ImageLayout = () => {
   return (
-    // TODO - Requires cleanup
     <div className="flex flex-row items-start justify-center md:mx-6">
       <Image
         src="/stack/kubernetes.svg"
