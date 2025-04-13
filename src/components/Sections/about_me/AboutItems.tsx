@@ -6,12 +6,12 @@ import EducationLayout from "./EducationLayout";
 const AboutItems = () => {
   return (
     <>
-      <div className="md:col-start-2 md:max-h-0 ">
+      <div className="md:col-start-2">
         <SectionHeadings subHeader="Introduction" sectionHeader="About me" />
       </div>
       <ImageLayout />
       <AboutMeText />
-      <div className="col-span-2">
+      <div className="md:col-span-2 md:mx-auto">
         <EducationLayout />
       </div>
     </>

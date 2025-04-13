@@ -34,6 +34,12 @@
             "major": "Kandidatexamen i Datavetenskap",
             "location": "Linné Universitetet | Växjö/Kalmar",
             "timeframe": "2022 - 2025"
+        },
+        "AccessibilityCertificate": {
+            "title": "Certifikat",
+            "major": "W3Cx Web Accessibility",
+            "location": "edX",
+            "timeframe": "2025"
         }
     }
 }

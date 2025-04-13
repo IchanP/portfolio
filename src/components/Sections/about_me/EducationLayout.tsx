@@ -1,9 +1,8 @@
 import EducationFetcher from "./EducationFetcher";
 
-// TODO accept children
 const EducationLayout = () => {
   return (
-    <div className="centered-flex flex-row gap-24">
+    <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16">
       <EducationFetcher />
     </div>
   );
