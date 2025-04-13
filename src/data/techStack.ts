@@ -1,18 +1,28 @@
-export const externalIcons: HrefIcons[] = [
+export const techStack: HrefIcon[] = [
   {
     href: "https://www.typescriptlang.org/",
     src: "/stack/ts-logo-128.svg",
     alt: "TypeScript",
   },
   {
-    href: "https://en.wikipedia.org/wiki/CSS",
-    src: "/stack/css.svg",
-    alt: "CSS",
+    href: "https://nodejs.org/en",
+    src: "/stack/node.svg",
+    alt: "NodeJS",
   },
   {
     href: "https://react.dev/",
     src: "/stack/react.svg",
     alt: "React",
+  },
+  {
+    href: "https://www.figma.com/",
+    src: "/stack/figma.svg",
+    alt: "Figma",
+  },
+  {
+    href: "https://en.wikipedia.org/wiki/CSS",
+    src: "/stack/css.svg",
+    alt: "CSS",
   },
   {
     href: "https://tailwindcss.com/",
@@ -34,10 +44,16 @@ export const externalIcons: HrefIcons[] = [
     src: "/stack/mysql.svg",
     alt: "MySQL",
   },
+  {
+    href: "https://www.mongodb.com/",
+    src: "/stack/mongodb.svg",
+    alt: "MongoDB",
+  },
+
   // TODO add figma, node, mongodb
 ];
 
-interface HrefIcons {
+export interface HrefIcon {
   href: string;
   src: string;
   alt: string;
