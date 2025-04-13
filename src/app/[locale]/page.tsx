@@ -1,5 +1,6 @@
-import InterestOne from "components/Sections/about_me/InterestOne";
+import AboutMe from "components/Sections/about_me/AboutMe";
 import IntroItems from "components/Sections/Intro/IntroItems";
+import ProjectItems from "components/Sections/projects/ProjectItems";
 import PageSections from "components/ui/PageSections";
 export default function Home() {
   return (
@@ -9,7 +10,10 @@ export default function Home() {
           <IntroItems />
         </PageSections>
         <PageSections alternateColor={true}>
-          <InterestOne />
+          <AboutMe />
+        </PageSections>
+        <PageSections alternateColor={false}>
+          <ProjectItems />
         </PageSections>
       </div>
     </div>

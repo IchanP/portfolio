@@ -1,7 +1,7 @@
 import SectionGrid from "components/Sections/about_me/SectionGrid";
 import AboutItems from "./AboutItems";
 
-const InterestOne = () => {
+const AboutMe = () => {
   return (
     <>
       <SectionGrid>
@@ -11,4 +11,4 @@ const InterestOne = () => {
   );
 };
 
-export default InterestOne;
+export default AboutMe;

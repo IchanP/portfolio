@@ -13,9 +13,9 @@
         "find_me": "Find or contact me here!"
     },
     "Projects": {
-        "Repub": {
-            "title": "Repub",
-            "summary": "A customizable Epub reader on the web. The idea is to provide a highly customizable Epub reader on the web, with similar features to what one might find in a native application. You bring your own books! Built using Nextjs ontop of Epubjs."
+        "Portfolio": {
+            "title": "Portfolio - April 2025",
+            "summary": "A modern and responsive portfolio, built with TypeScript, React, Tailwind CSS and Material UI. The portfolio showcases my education, projects and myself."
         }
     },
     "Name": {
