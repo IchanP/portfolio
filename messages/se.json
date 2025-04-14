@@ -48,5 +48,20 @@
             "title": "Portfölj - April 2025",
             "summary": "En modern och responsiv portfölj, byggd med TypeScript, React, Tailwind CSS och Material UI. Portföljen visar min utbildning, mina projekt och mig själv "
         }
+    },
+    "Contact": {
+        "SubHeader": "Låt oss prata",
+        "Header": "Kontakta mig",
+        "Form": {
+            "NameLabel": "Fullständigt namn",
+            "NamePlaceholder": "Ange ditt namn",
+            "EmailLabel": "E-post",
+            "EmailPlaceholder": "Ange din e-post",
+            "MessageLabel": "Meddelande",
+            "MessagePlaceholder": "Ditt meddelande",
+            "SendButton": "SKICKA MEDDELANDE",
+            "Success": "Meddelandet har skickats!",
+            "Error": "Det gick inte att skicka meddelandet. Försök igen."
+        }
     }
 }

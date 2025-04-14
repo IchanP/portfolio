@@ -16,7 +16,7 @@ const RoundedIconButton = ({
         customColor,
       )}
     >
-      <span className="font-outfit font-bold text-lg select-none">{text}</span>
+      <span className="desc-lg-txtselect-none">{text}</span>
     </div>
   );
 };

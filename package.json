@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^7.0.2",
     "@mui/material": "^7.0.2",
+    "@sendgrid/mail": "^8.1.5",
     "classnames": "^2.5.1",
     "country-flag-emoji-polyfill": "^0.1.8",
     "country-flag-icons": "^1.5.13",

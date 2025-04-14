@@ -1,4 +1,3 @@
-import SectionHeadings from "components/ui/SectionHeadings";
 import ProjectSectionLayout from "./ProjectSectionLayout";
 import ProjectLayout from "./ProjectLayout";
 import ProjectHeader from "./ProjectHeader";

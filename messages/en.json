@@ -48,5 +48,20 @@
             "title": "Portfolio - April 2025",
             "summary": "A modern and responsive portfolio, built with TypeScript, React, Tailwind CSS and Material UI. The portfolio showcases my education, projects and myself."
         }
+    },
+    "Contact": {
+        "SubHeader": "Let's chat",
+        "Header": "Contact me",
+        "Form": {
+            "NameLabel": "Full Name",
+            "NamePlaceholder": "Enter your name",
+            "EmailLabel": "Email",
+            "EmailPlaceholder": "Enter your email",
+            "MessageLabel": "Message",
+            "MessagePlaceholder": "Your message",
+            "SendButton": "SEND MESSAGE",
+            "Success": "Message sent successfully!",
+            "Error": "Failed to send message. Please try again."
+        }
     }
 }
