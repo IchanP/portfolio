@@ -1,5 +1,4 @@
 import { Email, GitHub, LinkedIn } from "@mui/icons-material";
-import { ListItem, ListItemIcon, ListItemText } from "@mui/material";
 import { blue, grey, red } from "@mui/material/colors";
 import SocialButton from "./SocialButton";
 

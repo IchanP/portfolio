@@ -61,7 +61,12 @@
             "MessagePlaceholder": "Ditt meddelande",
             "SendButton": "SKICKA MEDDELANDE",
             "Success": "Meddelandet har skickats!",
-            "Error": "Det gick inte att skicka meddelandet. Försök igen."
+            "Error": "Det gick inte att skicka meddelandet. Försök igen.",
+            "Errors": {
+                "Name": "Namnet får inte vara längre än 50 bokstäver.",
+                "Email": "Email får inte vara längre än 100 bokstäver.",
+                "Message": "Meddelandet får inte vara längre än 500 bokstäver."
+            }
         }
     }
 }

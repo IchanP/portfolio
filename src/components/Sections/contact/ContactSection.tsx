@@ -1,4 +1,5 @@
 import ContactHeader from "./ContactHeader";
+import ContactForm from "./Form/ContactForm";
 import SocialsFetcher from "./SocialsFetcher";
 import { SocialsLayout } from "./SocialsLayout";
 
@@ -9,7 +10,7 @@ const ContactSection = () => {
       <SocialsLayout>
         <SocialsFetcher />
       </SocialsLayout>
-      {/* <ContactForm /> */}
+      <ContactForm />
     </div>
   );
 };

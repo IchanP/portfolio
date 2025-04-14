@@ -61,7 +61,12 @@
             "MessagePlaceholder": "Your message",
             "SendButton": "SEND MESSAGE",
             "Success": "Message sent successfully!",
-            "Error": "Failed to send message. Please try again."
+            "Error": "Failed to send message. Please try again.",
+            "Errors": {
+                "Name": "Name must be 50 characters or less.",
+                "Email": "Email must be 100 characters or less.",
+                "Message": "Message must be 500 characters or less."
+            }
         }
     }
 }
