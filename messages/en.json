@@ -12,12 +12,6 @@
     "SocialMedia": {
         "find_me": "Find or contact me here!"
     },
-    "Projects": {
-        "Portfolio": {
-            "title": "Portfolio - April 2025",
-            "summary": "A modern and responsive portfolio, built with TypeScript, React, Tailwind CSS and Material UI. The portfolio showcases my education, projects and myself."
-        }
-    },
     "Name": {
         "my_name": "Pontus Grandin"
     },
@@ -28,18 +22,31 @@
         "view_cv": "View CV",
         "contact": "Contact"
     },
-    "Education": {
-        "University": {
-            "title": "Education",
-            "major": "Bachelor's Degree in Computer Science",
-            "location": "Linneaus University | Växjö/Kalmar",
-            "timeframe": "2022 - 2025"
-        },
-        "AccessibilityCertificate": {
-            "title": "Certificate",
-            "major": "W3Cx Web Accessibility",
-            "location": "edX",
-            "timeframe": "2025"
+    "About Me": {
+        "SubHeader": "Introduction",
+        "Header": "About me",
+        "Tools": "Tools I use",
+        "Education": {
+            "University": {
+                "title": "Education",
+                "major": "Bachelor's Degree in Computer Science",
+                "location": "Linneaus University | Växjö/Kalmar",
+                "timeframe": "2022 - 2025"
+            },
+            "AccessibilityCertificate": {
+                "title": "Certificate",
+                "major": "W3Cx Web Accessibility",
+                "location": "edX",
+                "timeframe": "2025"
+            }
+        }
+    },
+    "Projects": {
+        "SubHeader": "What I've done",
+        "Header": "Projects",
+        "Portfolio": {
+            "title": "Portfolio - April 2025",
+            "summary": "A modern and responsive portfolio, built with TypeScript, React, Tailwind CSS and Material UI. The portfolio showcases my education, projects and myself."
         }
     }
 }

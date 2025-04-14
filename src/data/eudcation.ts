@@ -2,7 +2,7 @@ import { EducationCardProps } from "components/Sections/about_me/EducationCard";
 import { useTranslations } from "next-intl";
 
 export function getTranslatedEducation(): Array<EducationCardProps> {
-  const t = useTranslations("Education");
+  const t = useTranslations("About Me.Education");
   return [
     {
       title: t("University.title"),

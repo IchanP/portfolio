@@ -8,6 +8,7 @@ import Button from "@mui/material/Button";
 import { Box, SvgIcon } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import BlackOverlayBoxImage from "./BlackOverlayBoxImage";
+import Link from "next/link";
 
 const ProjectCard = ({ project }: { project: ProjectInfo }) => {
   return (
@@ -19,15 +20,15 @@ const ProjectCard = ({ project }: { project: ProjectInfo }) => {
       </CardContent>
       <CardActions>
         {project.figmaUrl && (
-          <IconWithButton>
+          <ButtonLink href={project.figmaUrl}>
             <FigmaIcon />
             Figma
-          </IconWithButton>
+          </ButtonLink>
         )}
-        <IconWithButton>
+        <ButtonLink href={project.githubUrl}>
           <GitHubIcon />
           Github
-        </IconWithButton>
+        </ButtonLink>
       </CardActions>
     </Card>
   );
@@ -35,11 +36,19 @@ const ProjectCard = ({ project }: { project: ProjectInfo }) => {
 
 export default ProjectCard;
 
-function IconWithButton({ children }: { children: React.ReactNode }) {
+function ButtonLink({
+  children,
+  href,
+}: {
+  children: React.ReactNode;
+  href: string;
+}) {
   return (
-    <Button size="medium" className="flex flex-row gap-2">
-      {children}
-    </Button>
+    <Link href={href} target="_blank">
+      <Button size="medium" className="flex flex-row gap-2">
+        {children}
+      </Button>
+    </Link>
   );
 }
 

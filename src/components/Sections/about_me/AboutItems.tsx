@@ -1,16 +1,14 @@
-import SectionHeadings from "components/ui/SectionHeadings";
 import ImageLayout from "./ImageLayout";
 import AboutMeText from "./AboutMeText";
 import EducationLayout from "./EducationLayout";
 import TechStackLayout from "./TechStackLayout";
 import TechStack from "./TechStack";
+import AboutMeHeader from "./AboutMeHeader";
 
 const AboutItems = () => {
   return (
     <>
-      <div className="md:col-start-2">
-        <SectionHeadings subHeader="Introduction" sectionHeader="About me" />
-      </div>
+      <AboutMeHeader />
       <ImageLayout />
       <AboutMeText />
       <div className="md:col-span-2 md:mx-auto">

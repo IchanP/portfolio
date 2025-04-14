@@ -1,11 +1,12 @@
 import SectionHeadings from "components/ui/SectionHeadings";
 import ProjectSectionLayout from "./ProjectSectionLayout";
 import ProjectLayout from "./ProjectLayout";
+import ProjectHeader from "./ProjectHeader";
 
 const ProjectItems = () => {
   return (
     <ProjectSectionLayout>
-      <SectionHeadings subHeader="What I've done" sectionHeader="Projects" />
+      <ProjectHeader />
       <ProjectLayout />
     </ProjectSectionLayout>
   );
