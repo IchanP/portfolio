@@ -1,11 +1,15 @@
-import ContactForm from "./ContactForm";
 import ContactHeader from "./ContactHeader";
+import SocialsFetcher from "./SocialsFetcher";
+import { SocialsLayout } from "./SocialsLayout";
 
 const ContactSection = () => {
   return (
-    <div className="flex flex-col items-center gap-16 col-span-2 py-24">
+    <div className="flex flex-col items-center gap-4 col-span-2 py-24">
       <ContactHeader />
-      <ContactForm />
+      <SocialsLayout>
+        <SocialsFetcher />
+      </SocialsLayout>
+      {/* <ContactForm /> */}
     </div>
   );
 };

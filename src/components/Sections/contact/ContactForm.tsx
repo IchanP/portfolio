@@ -92,24 +92,6 @@ const ContactForm = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const socialLinks = [
-    {
-      icon: <LinkedIn />,
-      text: "LinkedIn",
-      href: "https://www.linkedin.com/in/pontus-grandin",
-    },
-    {
-      icon: <GitHub />,
-      text: "GitHub",
-      href: "https://github.com/pontusgrandin",
-    },
-    {
-      icon: <Email />,
-      text: "pontusgrandin@proton.me",
-      href: "mailto:pontusgrandin@proton.me",
-    },
-  ];
-
   return (
     <Box
       sx={{
@@ -123,40 +105,6 @@ const ContactForm = () => {
         px: 3,
       }}
     >
-      <List sx={{ minWidth: 250 }}>
-        {socialLinks.map((link, index) => (
-          <ListItem
-            key={index}
-            component="a"
-            href={link.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            sx={{
-              py: 1,
-              color: "inherit",
-              textDecoration: "none",
-              "&:hover": {
-                backgroundColor: "rgba(0, 0, 0, 0.04)",
-              },
-            }}
-          >
-            <ListItemIcon sx={{ color: "rgba(0, 0, 0, 0.56)" }}>
-              {link.icon}
-            </ListItemIcon>
-            <ListItemText
-              primary={link.text}
-              slotProps={{
-                primary: {
-                  fontFamily: "Roboto",
-                  fontSize: "16px",
-                  letterSpacing: "0.00938em",
-                },
-              }}
-            />
-          </ListItem>
-        ))}
-      </List>
-
       <Box
         component="form"
         onSubmit={handleSubmit}
