@@ -11,8 +11,13 @@ const ContactForm = () => {
   const t = useTranslations("Contact");
   const { validationErrors, setValidationErrors, validateFormData } =
     useValidateFormData();
-  const { isSubmitting, submitStatus, handleSubmit } = useContactForm();
+  const { isSubmitting, submitStatus, handleSubmit, setSubmitStatus } =
+    useContactForm();
   const { formData, setFormData, handleChange } = useFormState();
+
+  const handleClose = () => {
+    setSubmitStatus(null);
+  };
 
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -64,7 +69,7 @@ const ContactForm = () => {
             {isSubmitting ? "..." : t("Form.SendButton")}
           </Button>
 
-          <SubmitStatus submitStatus={submitStatus} />
+          <SubmitStatus submitStatus={submitStatus} onClose={handleClose} />
         </Box>
       </Box>
     </>
