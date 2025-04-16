@@ -1,20 +1,33 @@
 "use client";
 import { useTranslations } from "next-intl";
 import { Button, Box } from "@mui/material";
-import useContactForm from "./useContactForm";
+import useContactForm from "../../../../hooks/useContactForm";
 import SubmitStatus from "./SubmitStatus";
 import FormFields from "./FormFields";
+import useValidateFormData from "hooks/useValidateFormData";
+import useFormState from "hooks/useFormState";
 
 const ContactForm = () => {
   const t = useTranslations("Contact");
-  const {
-    formData,
-    isSubmitting,
-    submitStatus,
-    handleSubmit,
-    validationErrors,
-    handleChange,
-  } = useContactForm();
+  const { validationErrors, setValidationErrors, validateFormData } =
+    useValidateFormData();
+  const { isSubmitting, submitStatus, handleSubmit } = useContactForm();
+  const { formData, setFormData, handleChange } = useFormState();
+
+  const onSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const errors = await handleSubmit(formData, validateFormData);
+    if (errors) {
+      setValidationErrors(errors);
+    } else {
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    }
+  };
 
   return (
     <>
@@ -32,7 +45,7 @@ const ContactForm = () => {
       >
         <Box
           component="form"
-          onSubmit={handleSubmit}
+          onSubmit={onSubmit}
           sx={{
             display: "flex",
             flexDirection: "column",
@@ -47,12 +60,7 @@ const ContactForm = () => {
             handleChange={handleChange}
           />
 
-          <Button
-            type="submit"
-            variant="contained"
-            disabled={isSubmitting}
-            sx={{ alignSelf: "flex-scenter" }}
-          >
+          <Button type="submit" variant="contained" disabled={isSubmitting}>
             {isSubmitting ? "..." : t("Form.SendButton")}
           </Button>
 

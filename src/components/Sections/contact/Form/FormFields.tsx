@@ -37,6 +37,7 @@ const FormFields = ({
           error={validationErrors.name}
           helperText={validationErrors.name ? t("Errors.Name") : ""}
           fullWidth
+          className="bg-lightbg"
         />
         <TextField
           name="email"
@@ -49,6 +50,7 @@ const FormFields = ({
           error={validationErrors.email}
           helperText={validationErrors.email ? t("Errors.Email") : ""}
           type="email"
+          className="bg-lightbg"
         />
       </Stack>
 
@@ -64,6 +66,7 @@ const FormFields = ({
         error={validationErrors.message}
         helperText={validationErrors.message ? t("Errors.Message") : ""}
         fullWidth
+        className="bg-lightbg"
       />
     </>
   );
