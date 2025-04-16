@@ -5,6 +5,7 @@ export interface EducationCardProps {
   subheading: string;
   location: string;
   timeframe: string;
+  href: string;
 }
 
 const EducationCard = ({
@@ -18,12 +19,17 @@ const EducationCard = ({
         className="px-14 pt-5 py-2 flex flex-col gap-3 rounded-xl items-center 
           text-center md:w-11/12"
       >
-        <h3 className="font-outfit font-medium text-2xl text-blueAccent">
+        <h3 className="font-outfit font-medium text-2xl">
           {educationData.title}
         </h3>
-        <h4 className="text-2xl font-outfit font-medium">
+        <a
+          href={educationData.href}
+          rel="noopener noreferrer"
+          target="_blank"
+          className="text-2xl font-outfit font-medium text-blueAccent underline"
+        >
           {educationData.subheading}
-        </h4>
+        </a>
         <p className="font-outfit">{educationData.location}</p>
         <p className="font-outfit font-extralight">{educationData.timeframe}</p>
       </div>

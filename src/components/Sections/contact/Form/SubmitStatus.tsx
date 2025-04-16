@@ -11,7 +11,6 @@ const SubmitStatus = ({ submitStatus }: SubmitStatusProps) => {
 
   useEffect(() => {
     if (submitStatus !== null) {
-      console.log("test: ", submitStatus);
       alert(submitStatus === "success" ? t("Success") : t("Error"));
     }
   }, [submitStatus, t]);

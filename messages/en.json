@@ -1,16 +1,8 @@
 {
-    "HomePage": {
-        "About": "About me",
-        "about_message_one": "Lorem ipsum odor amet, consectetuer adipiscing elit. Lectus netus tempor magna aenean mus adipiscing. Auctor sit vestibulum fermentum; tellus mauris imperdiet aenean neque. Dui ante id magnis venenatis pharetra semper, mauris mattis?",
-        "about_message_two": "Hendrerit imperdiet faucibus tortor habitant taciti libero. Pellentesque fusce inceptos pellentesque tempus consequat fermentum, praesent interdum. Egestas maximus auctor senectus senectus interdum cursus vel porta. Egestas mollis purus per accumsan fringilla sagittis litora. Ac platea blandit bibendum rutrum sed. Netus sed feugiat ultrices rutrum natoque malesuada. Tempus primis efficitur finibus fringilla facilisi senectus fringilla erat. Pharetra sollicitudin aliquet pulvinar rutrum nisl ligula. Mollis facilisis id ante, in adipiscing gravida. Egestas amet integer ipsum; tortor accumsan inceptos. Integer himenaeos felis phasellus curae fermentum placerat volutpat felis?"
-    },
     "Navigation": {
         "home": "Home",
         "personal_projects": "Projects",
         "contact": "Contact"
-    },
-    "SocialMedia": {
-        "find_me": "Find or contact me here!"
     },
     "Name": {
         "my_name": "Pontus Grandin"
@@ -18,7 +10,7 @@
     "Introduction": {
         "present": "Hi, I'm ",
         "job_title": "Fullstack JavaScript Developer",
-        "introductory_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "introductory_text": "I'm a fullstack JavaScript developer with a goal to bring innovative and engaging web experiences to general audiences.",
         "view_cv": "View CV",
         "contact": "Contact"
     },
@@ -37,7 +29,7 @@
                 "title": "Certificate",
                 "major": "W3Cx Web Accessibility",
                 "location": "edX",
-                "timeframe": "2025"
+                "timeframe": "April 2025"
             }
         }
     },

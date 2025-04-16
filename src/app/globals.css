@@ -70,3 +70,7 @@
 .adaptive-two-grid {
   @apply grid grid-cols-1 md:grid-cols-2
 }
+
+.page-section {
+  @apply py-24 col-span-2
+}

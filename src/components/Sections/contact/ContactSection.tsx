@@ -5,7 +5,7 @@ import { SocialsLayout } from "./SocialsLayout";
 
 const ContactSection = () => {
   return (
-    <div className="flex flex-col items-center gap-4 col-span-2 py-24">
+    <div className="flex flex-col items-center gap-4 page-section">
       <ContactHeader />
       <SocialsLayout>
         <SocialsFetcher />
