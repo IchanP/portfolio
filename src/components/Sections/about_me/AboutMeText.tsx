@@ -1,12 +1,12 @@
-import ColoredHeader from "../../ui/ColoredHeader";
-import FontText from "../../ui/FontText";
-import JustifiedText from "../../ui/JustifiedText";
+import FontText from "components/ui/FontText";
+import ParagraphText from "components/ui/ParagraphText";
+import { useTranslations } from "next-intl";
 
-const Introduction = () => {
+const AboutMeText = () => {
+  const t = useTranslations("About Me.Text");
   return (
     <>
-      <ColoredHeader text="Fullstack JavaScript Developer"></ColoredHeader>
-      <JustifiedText>
+      <ParagraphText>
         <FontText>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed
           aliquam ex. Praesent tempor erat sit amet porta interdum. Proin
@@ -14,9 +14,10 @@ const Introduction = () => {
           feugiat. Orci varius natoque penatibus et magnis dis parturient
           montes, nascetur ridiculus mus.
         </FontText>
-      </JustifiedText>
+        <FontText>{t("paragraph_2")}</FontText>
+      </ParagraphText>
     </>
   );
 };
 
-export default Introduction;
+export default AboutMeText;

@@ -1,22 +1,8 @@
 {
-    "HomePage": {
-        "About": "Om mig",
-        "about_message_one": "Lorem ipsum odor amet, consectetuer adipiscing elit. Lectus netus tempor magna aenean mus adipiscing. Auctor sit vestibulum fermentum; tellus mauris imperdiet aenean neque. Dui ante id magnis venenatis pharetra semper, mauris mattis?",
-        "about_message_two": "Hendrerit imperdiet faucibus tortor habitant taciti libero. Pellentesque fusce inceptos pellentesque tempus consequat fermentum, praesent interdum. Egestas maximus auctor senectus senectus interdum cursus vel porta. Egestas mollis purus per accumsan fringilla sagittis litora. Ac platea blandit bibendum rutrum sed. Netus sed feugiat ultrices rutrum natoque malesuada. Tempus primis efficitur finibus fringilla facilisi senectus fringilla erat. Pharetra sollicitudin aliquet pulvinar rutrum nisl ligula. Mollis facilisis id ante, in adipiscing gravida. Egestas amet integer ipsum; tortor accumsan inceptos. Integer himenaeos felis phasellus curae fermentum placerat volutpat felis?"
-    },
     "Navigation": {
         "home": "Hem",
         "personal_projects": "Projekt",
         "contact": "Kontakta mig"
-    },
-    "SocialMedia": {
-        "find_me": "Finn eller kontakta mig här!"
-    },
-    "Projects": {
-        "Repub": {
-            "title": "Repub",
-            "summary": "En anpassningsbar Epub läsare på webben. Målet är att erbjdua en mycket anpassningsbar Epub läsare på nätet, med liknande funktioner som kan återfinnas i en nativ app. Du förser böckerna! Byggt med Nextjs ovanpå Epubjs."
-        }
     },
     "Name": {
         "my_name": "Pontus Grandin"
@@ -24,8 +10,63 @@
     "Introduction": {
         "present": "Hej, jag är ",
         "job_title": "Fullstack JavaScript Developer",
-        "introductory_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "introductory_text": "Jag är en fullstack JavaScript utvecklare med mål att skapa innovativa och engagerande webbupplevelser för gemene man.",
         "contact": "Kontakta mig",
         "view_cv": "Visa CV"
+    },
+    "About Me": {
+        "SubHeader": "Introduktion",
+        "Header": "Om mig",
+        "Tools": "Mina verktyg",
+        "Text": {
+            "paragraph_1": "",
+            "paragraph_2": "Utöver programmering och teknologi så gillar jag att spela spel och frisbee golf med vänner. Jag arbetar alltid för kontinuerligt lärande, och gillar att lära mig saker både inom och utanför teknologi. Majoriteten av mina favorit Youtube-kanaler är lärorika och utbildningsinriktade!"
+        },
+        "Education": {
+            "University": {
+                "title": "Utbildning",
+                "major": "Kandidatexamen i Datavetenskap",
+                "location": "Linnéuniversitetet | Växjö/Kalmar",
+                "timeframe": "2022 - 2025"
+            },
+            "AccessibilityCertificate": {
+                "title": "Certifikat",
+                "major": "W3Cx Web Accessibility",
+                "location": "edX",
+                "timeframe": "April 2025"
+            }
+        }
+    },
+    "Projects": {
+        "SubHeader": "Vad jag har gjort",
+        "Header": "Projekt",
+        "Portfolio": {
+            "title": "Portfölj - April 2025",
+            "summary": "En modern och responsiv portfölj, byggd med TypeScript, React, Tailwind CSS och Material UI. Portföljen visar upp min utbildning, mina projekt och introducerar dig till mig som person och utvecklare."
+        },
+        "Weather App": {
+            "title": "Väder Applikation - (WIP)",
+            "summary": "En väderapplikation som integrerar mot SMHI's publika API. Appen renderar aktuell GeoJSON väderdata med Leaflet. Byggd med Python, C#, och Next.JS. Med CI/CD setup genom Github Actions."
+        }
+    },
+    "Contact": {
+        "SubHeader": "Ta ett snack",
+        "Header": "Kontakta mig",
+        "Form": {
+            "NameLabel": "Fullständigt namn",
+            "NamePlaceholder": "Ange ditt namn",
+            "EmailLabel": "E-post",
+            "EmailPlaceholder": "Ange din e-post",
+            "MessageLabel": "Meddelande",
+            "MessagePlaceholder": "Ditt meddelande",
+            "SendButton": "SKICKA MEDDELANDE",
+            "Success": "Meddelandet har skickats!",
+            "Error": "Det gick inte att skicka meddelandet. Försök igen.",
+            "Errors": {
+                "Name": "Namnet får inte vara längre än 50 bokstäver.",
+                "Email": "Email får inte vara längre än 100 bokstäver.",
+                "Message": "Meddelandet får inte vara längre än 500 bokstäver."
+            }
+        }
     }
 }

@@ -38,7 +38,7 @@ export default async function RootLayout({
                 {children}
               </main>
             </div>
-            <footer className="bottom-0 w-full py-2 bg-lightPrimary dark:bg-darkPrimary">
+            <footer className="bottom-0 w-full py-2 ">
               <Footer />
             </footer>
           </NextIntlClientProvider>

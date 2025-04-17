@@ -10,13 +10,13 @@ const RoundedIconButton = ({
   return (
     <div
       className={classNames(
-        `py-2 px-5 flex flex-row items-center border-solid border-2 
-        border-black dark:border-white justify-center rounded-full hover:bg-black hover:text-white 
-        cursor-pointer ease-in duration-200 min-w-24 text-center`,
+        `py-2 px-5 centered-flex flex-row border-solid border-2 font-outfit font-semibold
+        border-black dark:border-white rounded-full hover:bg-black hover:text-white 
+        cursor-pointer min-w-24 text-center dm-light-on-hover ease-200 dark:bg-black`,
         customColor,
       )}
     >
-      <span className="font-outfit font-bold text-lg select-none">{text}</span>
+      <span className="desc-lg-txtselect-none">{text}</span>
     </div>
   );
 };

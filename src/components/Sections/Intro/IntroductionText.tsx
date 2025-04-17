@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import FontText from "components/ui/FontText";
-import JustifiedText from "components/ui/JustifiedText";
+import ParagraphText from "components/ui/ParagraphText";
 import SmallSubudedText from "components/ui/SmallSubduedText";
 import { useTranslations } from "next-intl";
 
@@ -36,9 +36,14 @@ const IntroductionTextRenderer = ({
   content,
 }: IntroductionTextProps) => (
   <>
-    <h1 className="text-4xl font-ovo text-center">{intro}!</h1>
-    <SmallSubudedText textColor="text-blueAccent" text={description} />
-    <JustifiedText>{content}</JustifiedText>
+    <h2 className="header-text">{intro}!</h2>
+    <SmallSubudedText
+      textColor="text-blueAccent dark:text-darkblueAccent"
+      text={description}
+    />
+    <p className="text-center md:text-left">
+      <ParagraphText>{content}</ParagraphText>
+    </p>
   </>
 );
 
