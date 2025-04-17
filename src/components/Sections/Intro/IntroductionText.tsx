@@ -41,7 +41,9 @@ const IntroductionTextRenderer = ({
       textColor="text-blueAccent dark:text-darkblueAccent"
       text={description}
     />
-    <ParagraphText>{content}</ParagraphText>
+    <p className="text-center md:text-left">
+      <ParagraphText>{content}</ParagraphText>
+    </p>
   </>
 );
 

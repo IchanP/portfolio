@@ -24,6 +24,9 @@ const useInputFieldStyling = () => {
       "&.Mui-focused fieldset": {
         borderColor: isDarkMode ? "#2BAFF8" : "",
       },
+      "&:hover fieldset": {
+        borderColor: isDarkMode ? "#2BAFF8" : "",
+      },
     },
   };
 
