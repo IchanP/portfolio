@@ -12,6 +12,7 @@ const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme, resolvedTheme } = useTheme();
   const setIsDarkmode = useIsDarkmode((state) => state.setIsDarkmode);
+
   useEffect(() => {
     setMounted(true);
 
@@ -37,10 +38,10 @@ const ThemeSwitcher = () => {
       transition-colors md:p-3 md:rounded-full md:w-auto"
       aria-label="Toggle Dark Mode"
     >
-      {theme === dark ? (
-        <Moon className="text-yellow-500" />
+      {theme !== dark ? (
+        <Moon className="text-black-500" />
       ) : (
-        <Sun className="text-black-500" />
+        <Sun className="text-yellow-500" />
       )}
     </button>
   );
