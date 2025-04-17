@@ -12,7 +12,6 @@ const config: Config = {
       colors: {
         lightbg: "#f5f5f5",
         lightPrimary: "#e2e0e0",
-        lightInteract: "#D1D5DB",
         blueAccent: "#0288D1",
         darkblueAccent: "#2BAFF8",
         darkbg: "#252323",

@@ -29,7 +29,7 @@
 }
 
 .item-bg {
-  @apply bg-lightInteract dark:bg-darkInteract
+  @apply bg-lightPrimary dark:bg-darkInteract
 }
 
 .flex-scol-mrow {

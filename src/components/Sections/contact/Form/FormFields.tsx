@@ -1,4 +1,5 @@
 import { TextField, Stack } from "@mui/material";
+import useInputFieldStyling from "hooks/useInputFieldStyling";
 import { useTranslations } from "next-intl";
 
 interface FormFieldsProps {
@@ -23,6 +24,7 @@ const FormFields = ({
   handleChange,
 }: FormFieldsProps) => {
   const t = useTranslations("Contact.Form");
+  const { muiInputFieldStyling } = useInputFieldStyling();
 
   return (
     <>
@@ -37,7 +39,8 @@ const FormFields = ({
           error={validationErrors.name}
           helperText={validationErrors.name ? t("Errors.Name") : ""}
           fullWidth
-          className="bg-lightbg"
+          className="bg-lightbg dark:bg-darkInteract"
+          sx={muiInputFieldStyling}
         />
         <TextField
           name="email"
@@ -50,7 +53,8 @@ const FormFields = ({
           error={validationErrors.email}
           helperText={validationErrors.email ? t("Errors.Email") : ""}
           type="email"
-          className="bg-lightbg"
+          className="bg-lightbg dark:bg-darkInteract"
+          sx={muiInputFieldStyling}
         />
       </Stack>
 
@@ -66,7 +70,8 @@ const FormFields = ({
         error={validationErrors.message}
         helperText={validationErrors.message ? t("Errors.Message") : ""}
         fullWidth
-        className="bg-lightbg"
+        sx={muiInputFieldStyling}
+        className="bg-lightbg dark:bg-darkInteract"
       />
     </>
   );
