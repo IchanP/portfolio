@@ -11,22 +11,29 @@ import Link from "next/link";
 
 const ProjectCard = ({ project }: { project: ProjectInfo }) => {
   return (
-    <Card sx={{ maxWidth: 311 }}>
+    <Card
+      sx={{ maxWidth: 311 }}
+      className="dark:bg-darkInteract dark:text-white"
+    >
       <BlackOverlayBoxImage imgAlt={project.imgAlt} imgSrc={project.imgSrc} />
       <CardContent className="flex flex-col gap-3">
-        <h3 className="text-blueAccent text-xl font-outfit">{project.title}</h3>
+        <h3 className="text-blueAccent dark:text-darkblueAccent text-xl font-outfit">
+          {project.title}
+        </h3>
         <ParagraphText>{project.summary}</ParagraphText>
       </CardContent>
+
       <CardActions>
         {project.figmaUrl && (
           <ButtonLink href={project.figmaUrl}>
-            <FigmaIcon />
-            Figma
+            <SvgWithText icon={FigmaIcon()} text="Figma" />
           </ButtonLink>
         )}
         <ButtonLink href={project.githubUrl}>
-          <GitHubIcon />
-          Github
+          <SvgWithText
+            icon={<GitHubIcon className="dark:text-darkblueAccent" />}
+            text="Github"
+          />
         </ButtonLink>
       </CardActions>
     </Card>
@@ -71,5 +78,14 @@ function FigmaIcon() {
         </g>
       </svg>
     </SvgIcon>
+  );
+}
+
+function SvgWithText({ icon, text }: { icon: unknown; text: string }) {
+  return (
+    <>
+      {icon}
+      <span className="text-blueAccent dark:text-darkblueAccent">{text}</span>
+    </>
   );
 }
