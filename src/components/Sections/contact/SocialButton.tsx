@@ -23,7 +23,7 @@ const SocialButton = ({ href, icon, text }: SocialButtonProps) => {
         color: "inherit",
         width: "100%",
       }}
-      className="md:saturate-0 hover:saturate-100 gap-3"
+      className="md:saturate-[0.25] dark:hover:saturate-100 hover:saturate-100 gap-3 ease-200"
     >
       <ListItemIcon style={{ minWidth: 0 }}>{icon}</ListItemIcon>
       <p className="font-outfit font-light" style={{ marginLeft: "8px" }}>

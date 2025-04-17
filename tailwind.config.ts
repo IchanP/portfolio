@@ -12,12 +12,12 @@ const config: Config = {
       colors: {
         lightbg: "#f5f5f5",
         lightPrimary: "#e2e0e0",
-        lightHover: "#D1D5DB",
+        lightInteract: "#D1D5DB",
         blueAccent: "#0288D1",
-        darkbg: "rgb(18, 18, 18)" /* Slightly adjusted dark background */,
-        darkPrimary: "rgb(80, 11, 64)" /* Deep purple primary color */,
-        darkSecondary: "rgb(70, 68, 69)" /* Complementary neutral dark color */,
-        darkHover: "rgb(109, 30, 105)" /* Lighter shade for hover effect */,
+        darkblueAccent: "#2BAFF8",
+        darkbg: "#252323",
+        darkPrimary: "#3A3939",
+        darkInteract: "#484747" /* Lighter shade for hover effect */,
       },
       fontFamily: {
         emoji: [

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ImageLayout = () => {
   return (
-    <div className="flex flex-row items-start justify-center ">
+    <div className="flex flex-row items-start justify-center 2xl:ml-32 ">
       <Image
         src="/stack/kubernetes.svg"
         width={0}

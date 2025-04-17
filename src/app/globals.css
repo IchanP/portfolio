@@ -28,6 +28,10 @@
  @apply bg-lightPrimary dark:bg-darkPrimary
 }
 
+.item-bg {
+  @apply bg-lightInteract dark:bg-darkInteract
+}
+
 .flex-scol-mrow {
   @apply flex flex-col md:flex-row
 }

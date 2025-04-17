@@ -6,8 +6,7 @@ const MenuDiv = ({ children }: { children: React.ReactNode }) => {
     <div
       className={classNames(
         `top-bordered h-12 flex flex-col w-full text-center 
-        bg-lightPrimary font-medium
-        md:border-t-0 md:w-auto hover:font-semibold`,
+         font-medium md:border-t-0 md:w-auto hover:font-semibold`,
       )}
     >
       {children}

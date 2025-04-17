@@ -37,7 +37,10 @@ const IntroductionTextRenderer = ({
 }: IntroductionTextProps) => (
   <>
     <h2 className="header-text">{intro}!</h2>
-    <SmallSubudedText textColor="text-blueAccent" text={description} />
+    <SmallSubudedText
+      textColor="text-blueAccent dark:text-darkblueAccent"
+      text={description}
+    />
     <ParagraphText>{content}</ParagraphText>
   </>
 );

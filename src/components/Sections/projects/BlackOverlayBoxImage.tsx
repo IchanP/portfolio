@@ -9,7 +9,12 @@ const BlackOverlayBoxImage = ({
 }) => {
   return (
     <Box sx={{ position: "relative" }}>
-      <CardMedia component="img" alt={imgAlt} src={imgSrc} />
+      <CardMedia
+        component="img"
+        alt={imgAlt}
+        src={imgSrc}
+        sx={{ maxHeight: "150px" }}
+      />
       <Box
         sx={{
           position: "absolute",
@@ -17,7 +22,7 @@ const BlackOverlayBoxImage = ({
           left: 0,
           width: "100%",
           height: "100%",
-          backgroundColor: "rgba(0, 0, 0, 0.5)", // Gray with 50% opacity
+          backgroundColor: "rgba(0, 0, 0, 0.2)", // Gray with 20% opacity
         }}
       />
     </Box>

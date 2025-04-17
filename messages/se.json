@@ -18,6 +18,10 @@
         "SubHeader": "Introduktion",
         "Header": "Om mig",
         "Tools": "Mina verktyg",
+        "Text": {
+            "paragraph_1": "",
+            "paragraph_2": "Utöver programmering och teknologi så gillar jag att spela spel och frisbee golf med vänner. Jag arbetar alltid för kontinuerligt lärande, och gillar att lära mig saker både inom och utanför teknologi. Majoriteten av mina favorit Youtube-kanaler är lärorika och utbildningsinriktade!"
+        },
         "Education": {
             "University": {
                 "title": "Utbildning",
@@ -39,6 +43,10 @@
         "Portfolio": {
             "title": "Portfölj - April 2025",
             "summary": "En modern och responsiv portfölj, byggd med TypeScript, React, Tailwind CSS och Material UI. Portföljen visar upp min utbildning, mina projekt och introducerar dig till mig som person och utvecklare."
+        },
+        "Weather App": {
+            "title": "Väder Applikation - (WIP)",
+            "summary": "En väderapplikation som integrerar mot SMHI's publika API. Appen renderar aktuell GeoJSON väderdata med Leaflet. Byggd med Python, C#, och Next.JS. Med CI/CD setup genom Github Actions."
         }
     },
     "Contact": {

@@ -18,6 +18,10 @@
         "SubHeader": "Introduction",
         "Header": "About me",
         "Tools": "Tools I use",
+        "Text": {
+            "paragraph_1": "",
+            "paragraph_2": "Outside of programming and technology, I enjoy playing games and frisbee golf with friends. I am an active and continous learner and like to learn new things inside and outside of technology, most of my favorite Youtube channels are educational!"
+        },
         "Education": {
             "University": {
                 "title": "Education",
@@ -39,6 +43,10 @@
         "Portfolio": {
             "title": "Portfolio - April 2025",
             "summary": "A modern and responsive portfolio, built with TypeScript, React, Tailwind CSS and Material UI. The portfolio showcases my education, projects and myself."
+        },
+        "Weather App": {
+            "title": "Weather App - (WIP)",
+            "summary": "A weather application built against SMHI’s public API. Rendering GeoJSON data using Leaflet. Built with Python, C# and Next.Js, with CI/CD setup using Github actions."
         }
     },
     "Contact": {

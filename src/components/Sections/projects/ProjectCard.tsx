@@ -1,11 +1,10 @@
 import { ProjectInfo } from "data/projects";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import CardActions from "@mui/material/CardActions";
 import ParagraphText from "components/ui/ParagraphText";
 import Button from "@mui/material/Button";
-import { Box, SvgIcon } from "@mui/material";
+import { SvgIcon } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import BlackOverlayBoxImage from "./BlackOverlayBoxImage";
 import Link from "next/link";
