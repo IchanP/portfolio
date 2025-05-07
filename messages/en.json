@@ -1,22 +1,8 @@
 {
-    "HomePage": {
-        "About": "About me",
-        "about_message_one": "Lorem ipsum odor amet, consectetuer adipiscing elit. Lectus netus tempor magna aenean mus adipiscing. Auctor sit vestibulum fermentum; tellus mauris imperdiet aenean neque. Dui ante id magnis venenatis pharetra semper, mauris mattis?",
-        "about_message_two": "Hendrerit imperdiet faucibus tortor habitant taciti libero. Pellentesque fusce inceptos pellentesque tempus consequat fermentum, praesent interdum. Egestas maximus auctor senectus senectus interdum cursus vel porta. Egestas mollis purus per accumsan fringilla sagittis litora. Ac platea blandit bibendum rutrum sed. Netus sed feugiat ultrices rutrum natoque malesuada. Tempus primis efficitur finibus fringilla facilisi senectus fringilla erat. Pharetra sollicitudin aliquet pulvinar rutrum nisl ligula. Mollis facilisis id ante, in adipiscing gravida. Egestas amet integer ipsum; tortor accumsan inceptos. Integer himenaeos felis phasellus curae fermentum placerat volutpat felis?"
-    },
     "Navigation": {
         "home": "Home",
         "personal_projects": "Projects",
         "contact": "Contact"
-    },
-    "SocialMedia": {
-        "find_me": "Find or contact me here!"
-    },
-    "Projects": {
-        "Repub": {
-            "title": "Repub",
-            "summary": "A customizable Epub reader on the web. The idea is to provide a highly customizable Epub reader on the web, with similar features to what one might find in a native application. You bring your own books! Built using Nextjs ontop of Epubjs."
-        }
     },
     "Name": {
         "my_name": "Pontus Grandin"
@@ -24,8 +10,63 @@
     "Introduction": {
         "present": "Hi, I'm ",
         "job_title": "Fullstack JavaScript Developer",
-        "introductory_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "introductory_text": "I'm a fullstack JavaScript developer with a goal to bring innovative and engaging web experiences to general audiences.",
         "view_cv": "View CV",
         "contact": "Contact"
+    },
+    "About Me": {
+        "SubHeader": "Introduction",
+        "Header": "About me",
+        "Tools": "Tools I use",
+        "Text": {
+            "paragraph_1": "I'm a curious web developer who always aim to try out new things in every project or thing that I do. My approach is driven by a desire to learn and grow, ensuring that each project is an opportunity to bring something new to what comes next.",
+            "paragraph_2": "Outside of programming and technology, I enjoy playing games and frisbee golf with friends. I am an active and continous learner and like to learn new things inside and outside of technology, most of my favorite Youtube channels are educational!"
+        },
+        "Education": {
+            "University": {
+                "title": "Education",
+                "major": "Bachelor's Degree in Computer Science",
+                "location": "Linneaus University | Växjö/Kalmar",
+                "timeframe": "2022 - 2025"
+            },
+            "AccessibilityCertificate": {
+                "title": "Certificate",
+                "major": "W3Cx Web Accessibility",
+                "location": "edX",
+                "timeframe": "April 2025"
+            }
+        }
+    },
+    "Projects": {
+        "SubHeader": "What I've done",
+        "Header": "Projects",
+        "Portfolio": {
+            "title": "Portfolio - April 2025",
+            "summary": "A modern and responsive portfolio, built with TypeScript, React, Tailwind CSS and Material UI. The portfolio showcases my education, projects and myself."
+        },
+        "Weather App": {
+            "title": "Weather App - (WIP)",
+            "summary": "A weather application built against SMHI’s public API. Rendering GeoJSON data using Leaflet. Built with Python, C# and Next.Js, with CI/CD setup using Github actions."
+        }
+    },
+    "Contact": {
+        "SubHeader": "Let's chat",
+        "Header": "Contact me",
+        "Form": {
+            "NameLabel": "Full Name",
+            "NamePlaceholder": "Enter your name",
+            "EmailLabel": "Email",
+            "EmailPlaceholder": "Enter your email",
+            "MessageLabel": "Message",
+            "MessagePlaceholder": "Your message",
+            "SendButton": "SEND MESSAGE",
+            "Success": "Message sent successfully!",
+            "Error": "Failed to send message. Please try again.",
+            "Errors": {
+                "Name": "Name must be 50 characters or less.",
+                "Email": "Email must be 100 characters or less.",
+                "Message": "Message must be 500 characters or less."
+            }
+        }
     }
 }

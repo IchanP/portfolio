@@ -1,15 +1,18 @@
 const PageSections = ({
   children,
   alternateColor,
+  id,
 }: {
   children: React.ReactNode;
   alternateColor: boolean;
+  id?: string;
 }) => {
   return (
     <div
-      className={`w-full flex items-center justify-center ${alternateColor ? " bg-lightPrimary" : ""}`}
+      id={id}
+      className={`w-full flex items-center justify-center ${alternateColor ? "primary-bg" : "background"}`}
     >
-      <div className="grid grid-cols-1 max-w-6xl md:grid-cols-2 h-screen">
+      <div className="grid grid-cols-1 max-w-[70%] 2k-wide:max-w-[50%] md:grid-cols-2 h-full">
         {children}
       </div>
     </div>

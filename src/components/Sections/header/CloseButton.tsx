@@ -8,7 +8,7 @@ const CloseButton = () => {
 
   return (
     <MenuDiv>
-      <div className="flex w-full flex-row items-end justify-end">
+      <div className="flex w-full flex-row pt-2 justify-end">
         <button onClick={handleMenuState} className="px-2 mr-2">
           <Image
             src="/close-menu.svg"

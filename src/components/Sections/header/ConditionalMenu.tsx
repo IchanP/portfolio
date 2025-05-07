@@ -6,8 +6,8 @@ const ConditionalMenu = () => {
 
   return (
     <>
-      <div className="hidden md:flex md:flex-row absolute left-48">
-        <h1 className="font-ovo text-3xl">{t("my_name")}</h1>
+      <div className="shide-mflex absolute left-48 flex-scol-mrow">
+        <h1 className="header-large select-none">{t("my_name")}</h1>
       </div>
       <div className="md:hidden w-full">
         <CloseButton />

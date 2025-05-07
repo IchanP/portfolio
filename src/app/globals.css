@@ -6,6 +6,7 @@
   .text-balance {
     text-wrap: balance;
   }
+
 }
 
 @keyframes scrollInFromTop {
@@ -17,4 +18,63 @@
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+.background {
+  @apply bg-lightbg dark:bg-darkbg
+}
+
+.primary-bg {
+ @apply bg-lightPrimary dark:bg-darkPrimary
+}
+
+.item-bg {
+  @apply bg-lightPrimary dark:bg-darkInteract
+}
+
+.flex-scol-mrow {
+  @apply flex flex-col md:flex-row
+}
+
+.centered-flex {
+  @apply flex items-center justify-center
+}
+
+.shide-mflex {
+  @apply hidden md:flex
+}
+.header-large {
+  @apply font-ovo text-3xl
+}
+
+.md-row {
+  @apply md:flex md:flex-row
+}
+
+.top-bordered {
+  @apply border-t-2 border-[#fcf2f2] dark:border-[#0d0f14]
+}
+
+.ease-200 {
+  @apply ease-in duration-200
+}
+
+.dm-light-on-hover {
+  @apply dark:hover:bg-lightPrimary dark:hover:text-black
+}
+
+.desc-lg-txt {
+  @apply font-outfit font-bold text-lg 
+}
+
+.header-text {
+  @apply text-4xl font-ovo text-center
+}
+
+.adaptive-two-grid {
+  @apply grid grid-cols-1 md:grid-cols-2
+}
+
+.page-section {
+  @apply py-24 col-span-2
 }

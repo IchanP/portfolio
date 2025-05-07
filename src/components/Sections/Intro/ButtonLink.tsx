@@ -5,18 +5,21 @@ const ButtonLink = ({
   href,
   text,
   invertColor,
+  newTab,
 }: {
   href: string;
   text: string;
   invertColor?: boolean;
+  newTab?: boolean;
 }) => {
   // TODO - requires attention for darkmode
   const invertedColor = invertColor
-    ? "bg-[#27272a] hover:bg-black text-white"
+    ? `bg-black hover:bg-white text-white hover:text-black dm-light-on-hover 
+       dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white dark:border-black`
     : "";
   return (
     <>
-      <Link href={href}>
+      <Link href={href} target={newTab ? "_blank" : ""}>
         <RoundedIconButton text={text} customColor={invertedColor} />
       </Link>
     </>

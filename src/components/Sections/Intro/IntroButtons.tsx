@@ -9,9 +9,12 @@ import { useTranslations } from "next-intl";
 const IntroButtons = () => {
   const t = useTranslations("Introduction");
   return (
-    <div className="mt-5 gap-4 flex flex-row">
-      {/* TODO fix this broken link */}
-      <ButtonLink href="/cv/pontus_grandin_cv.pdf" text={t("view_cv")} />
+    <div className="mt-5 gap-4 flex flex-row justify-center md:justify-start">
+      <ButtonLink
+        href="/cv/Pontus Grandin - CV.pdf"
+        text={t("view_cv")}
+        newTab={true}
+      />
       <ButtonLink href="#contact" text={t("contact")} invertColor={true} />
     </div>
   );

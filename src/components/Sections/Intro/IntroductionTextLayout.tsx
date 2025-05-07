@@ -9,7 +9,9 @@ const IntroductionTextLayout = ({
   children: React.ReactNode;
 }) => {
   return (
-    <div className="flex flex-col gap-2 mt-[-40%] md:mt-0">{children}</div>
+    <div className="flex flex-col md:gap-2 gap-4 mt-[-40%] md:mt-0">
+      {children}
+    </div>
   );
 };
 
