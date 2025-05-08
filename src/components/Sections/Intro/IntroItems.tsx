@@ -9,7 +9,7 @@ const IntroItems = () => {
     <>
       <IntroLayout>
         <RoundedImage
-          src="/toradora-test.jpeg"
+          src="/intro_image.jpg"
           altText="A yellow JavaScript logo"
           ratio="md:w-[50%] md:pt-[50%] w-[75%] 
                     pt-[75%] shadow-[0px_10px_20px_0px_rgba(0,0,0,0.25)]"
