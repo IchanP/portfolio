@@ -2,7 +2,7 @@ import RoundedImage from "components/ui/RoundedImage";
 
 const ImageLayout = () => {
   return (
-    <div className="flex flex-row items-start justify-center 2xl:ml-32 ">
+    <div className="flex flex-row items-start justify-center ">
       <RoundedImage
         src="/about_color.png"
         altText="image of taiga"
