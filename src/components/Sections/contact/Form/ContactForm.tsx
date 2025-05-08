@@ -38,14 +38,9 @@ const ContactForm = () => {
     <>
       <Box
         sx={{
-          display: "flex",
-          flexDirection: { xs: "column", md: "row" },
-          gap: { xs: 4, md: 6 },
-          alignItems: "flex-start",
           width: "100%",
-          maxWidth: "1200px",
-          mx: "auto",
-          px: 3,
+          display: "flex",
+          justifyContent: "center",
         }}
       >
         <Box
@@ -64,11 +59,9 @@ const ContactForm = () => {
             validationErrors={validationErrors}
             handleChange={handleChange}
           />
-
           <Button type="submit" variant="contained" disabled={isSubmitting}>
             {isSubmitting ? "..." : t("Form.SendButton")}
           </Button>
-
           <SubmitStatus submitStatus={submitStatus} onClose={handleClose} />
         </Box>
       </Box>
