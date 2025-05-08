@@ -9,7 +9,7 @@ const NavItem = ({ title, href }: NavItemProps) => {
   return (
     <>
       <Link
-        className="w-full h-full font-ovo flex text-lg centered-flex px-5 bg-primary"
+        className="w-full h-full font-ovo flex text-lg centered-flex px-5"
         href={href}
       >
         {title}

@@ -16,7 +16,7 @@ const ButtonLink = ({
   const invertedColor = invertColor
     ? `bg-black hover:bg-white text-white hover:text-black dm-light-on-hover 
        dark:bg-white dark:text-black dark:hover:bg-black dark:hover:text-white dark:border-black`
-    : "";
+    : "hover:text-white";
   return (
     <>
       <Link href={href} target={newTab ? "_blank" : ""}>
