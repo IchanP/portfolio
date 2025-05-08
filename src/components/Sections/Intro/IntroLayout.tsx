@@ -8,7 +8,7 @@ import React from "react";
 const IntroLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div
-      className="grid grid-cols-1 py-[35%]
+      className="grid grid-cols-1
       place-items-center md:gap-10 md:py-0
       md:grid-cols-2 md:col-span-2 mx-page
       h-screen"
