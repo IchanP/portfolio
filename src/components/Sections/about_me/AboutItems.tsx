@@ -14,7 +14,7 @@ const AboutItems = () => {
       <div className="md:col-span-2 md:mx-auto">
         <EducationLayout />
       </div>
-      <div className="md:col-span-2">
+      <div className="md:col-span-2 md:mx-auto">
         <TechStackLayout>
           <TechStack />
         </TechStackLayout>

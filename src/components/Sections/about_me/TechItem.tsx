@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const TechItem = ({ iconInfo }: { iconInfo: HrefIcon }) => {
   return (
-    <div className="w-1/4 md:w-1/12 cursor-pointer">
+    <div className="w-1/4 lg:w-2/12 xl:w-1/12 cursor-pointer">
       <Link href={iconInfo.href} target="_blank">
         <HoverableContainer>
           <div className="pt-5 px-5 h-full relative flex flex-col items-center">
@@ -17,7 +17,7 @@ const TechItem = ({ iconInfo }: { iconInfo: HrefIcon }) => {
                 alt={iconInfo.alt}
               />
             </div>
-            <p className="text-sm font-outfit text-center mt-auto pb-1">
+            <p className="text-sm font-outfit text-center mt-auto pb-1 px-6 xl:px-0">
               {iconInfo.alt}
             </p>
           </div>

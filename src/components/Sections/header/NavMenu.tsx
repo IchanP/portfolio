@@ -9,7 +9,9 @@ const NavMenu = () => {
   return (
     <NavLayout isMenuOpen={isMenuOpen}>
       <ConditionalMenu />
-      <NavItemFetcher />
+      <div className="flex-scol-mrow">
+        <NavItemFetcher />
+      </div>
     </NavLayout>
   );
 };

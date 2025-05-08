@@ -6,7 +6,7 @@ const ConditionalMenu = () => {
 
   return (
     <>
-      <div className="shide-mflex absolute left-48 flex-scol-mrow">
+      <div className="shide-mflex absolute left-48 flex-scol-mrow min-[3000px]:left-[20%]">
         <h1 className="header-large select-none">{t("my_name")}</h1>
       </div>
       <div className="md:hidden w-full">

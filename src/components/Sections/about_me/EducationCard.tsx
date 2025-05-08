@@ -16,7 +16,7 @@ const EducationCard = ({
   return (
     <HoverableContainer>
       <div
-        className="px-14 pt-5 py-2 flex flex-col gap-3 rounded-xl items-center 
+        className="px-14 pt-5 py-2 flex flex-col gap-3 rounded-xl items-center justify-center
           text-center md:w-11/12"
       >
         <h3 className="font-outfit font-medium text-2xl">
