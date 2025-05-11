@@ -3,9 +3,10 @@ import "../globals.css";
 import { TopLevelProviders } from "../providers";
 import Header from "../../components/Sections/header/Header";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, getTranslations } from "next-intl/server";
 import Footer from "components/Sections/footer/Footer";
 import { Metadata } from "next/types";
+import { locales } from "i18n/locales";
 
 const ovoRegular = localFont({
   src: "../fonts/Ovo-Regular.ttf",
@@ -18,10 +19,39 @@ const outfit = localFont({
   variable: "--font-outfit",
 });
 
-export const metadata: Metadata = {
-  title: "Pontus Grandin | Fullstack JavaScript Developer",
-  description: "Portfolio for the JavaScript Developer Pontus Grandin",
+export const generateStaticParams = async () => {
+  return locales.map((locale) => ({ locale }));
 };
+
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const t = await getTranslations("MetaData"); // Get the translator function for the locale
+
+  const title = t("title"); // Get the title from your messages
+  const description = t("description"); // Get the description
+
+  const baseUrl = "https://pontusgrandin.dev";
+  const currentUrl = `${baseUrl}/${locale}`;
+
+  return {
+    title,
+    description,
+    metadataBase: new URL(baseUrl),
+    alternates: {
+      canonical: currentUrl,
+      languages: locales.reduce(
+        (acc, l) => {
+          acc[l] = `${baseUrl}/${l}`;
+          return acc;
+        },
+        {} as Record<string, string>,
+      ),
+    },
+  };
+}
 
 export default async function RootLayout({
   children,
