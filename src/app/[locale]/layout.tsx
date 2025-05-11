@@ -19,20 +19,12 @@ const outfit = localFont({
   variable: "--font-outfit",
 });
 
-export const generateStaticParams = async () => {
-  return locales.map((locale) => ({ locale }));
-};
-
-export async function generateMetadata({
-  params: { locale },
-}: {
-  params: { locale: string };
-}): Promise<Metadata> {
+export async function generateMetadata(): Promise<Metadata> {
   const title = "Pontus Grandin | Portfolio";
   const description = "JavaScript Developer";
 
   const baseUrl = "https://pontusgrandin.dev";
-  const currentUrl = `${baseUrl}/${locale}`;
+  const currentUrl = `${baseUrl}/en`;
 
   return {
     title,
