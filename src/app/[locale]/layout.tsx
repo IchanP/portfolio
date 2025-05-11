@@ -3,7 +3,7 @@ import "../globals.css";
 import { TopLevelProviders } from "../providers";
 import Header from "../../components/Sections/header/Header";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, getTranslations } from "next-intl/server";
+import { getMessages } from "next-intl/server";
 import Footer from "components/Sections/footer/Footer";
 import { Metadata } from "next/types";
 import { locales } from "i18n/locales";
@@ -28,10 +28,8 @@ export async function generateMetadata({
 }: {
   params: { locale: string };
 }): Promise<Metadata> {
-  const t = await getTranslations("MetaData"); // Get the translator function for the locale
-
-  const title = t("title"); // Get the title from your messages
-  const description = t("description"); // Get the description
+  const title = "Pontus Grandin | Portfolio";
+  const description = "JavaScript Developer";
 
   const baseUrl = "https://pontusgrandin.dev";
   const currentUrl = `${baseUrl}/${locale}`;
