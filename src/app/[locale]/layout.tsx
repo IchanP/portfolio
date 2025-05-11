@@ -21,7 +21,8 @@ const outfit = localFont({
 
 export async function generateMetadata(): Promise<Metadata> {
   const title = "Pontus Grandin | Portfolio";
-  const description = "JavaScript Developer";
+  const description =
+    "Pontus Grandin is a web developer with experience in building modern web applications. Explore his portfolio to see his work and projects.";
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL as string;
   const currentUrl = `${baseUrl}/en`;
 
@@ -38,6 +39,12 @@ export async function generateMetadata(): Promise<Metadata> {
         },
         {} as Record<string, string>,
       ),
+    },
+    robots: {
+      index: true,
+      follow: true,
+      nosnippet: false,
+      "max-image-preview": "large",
     },
   };
 }
