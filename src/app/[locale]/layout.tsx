@@ -5,6 +5,7 @@ import Header from "../../components/Sections/header/Header";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import Footer from "components/Sections/footer/Footer";
+import { Metadata } from "next/types";
 
 const ovoRegular = localFont({
   src: "../fonts/Ovo-Regular.ttf",
@@ -16,6 +17,11 @@ const outfit = localFont({
   src: "../fonts/Outfit-VariableFont_wght.ttf",
   variable: "--font-outfit",
 });
+
+export const metadata: Metadata = {
+  title: "Pontus Grandin | Fullstack JavaScript Developer",
+  description: "Portfolio for the JavaScript Developer Pontus Grandin",
+};
 
 export default async function RootLayout({
   children,

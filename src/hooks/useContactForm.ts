@@ -3,7 +3,7 @@ import { ValidationErrors } from "./useValidateFormData";
 import { FormData } from "./useFormState";
 
 // NOTE - This is not a secret key, but a public access key for the web3 contactform API.
-const webThreeAccessKey = "50b2ef9e-f99f-4553-b184-ee9d95d057e1";
+const webThreeAccessKey = "100f5f09-7514-4673-b764-2dba05bf7172";
 
 const useContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
