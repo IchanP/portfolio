@@ -22,8 +22,7 @@ const outfit = localFont({
 export async function generateMetadata(): Promise<Metadata> {
   const title = "Pontus Grandin | Portfolio";
   const description = "JavaScript Developer";
-
-  const baseUrl = "https://pontusgrandin.dev";
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL as string;
   const currentUrl = `${baseUrl}/en`;
 
   return {
@@ -53,6 +52,16 @@ export default async function RootLayout({
   const messages = await getMessages();
   return (
     <html lang={locale} suppressHydrationWarning>
+      <head>
+        {locales.map((l) => (
+          <link
+            key={l}
+            rel="alternate"
+            hrefLang={l}
+            href={`${process.env.NEXT_PUBLIC_BASE_URL}/${l}`}
+          />
+        ))}
+      </head>
       <body
         className={`${ovoRegular.variable} ${outfit.variable} flex flex-col min-h-screen antialiased bg-lightbg text-black dark:bg-darkbg dark:text-white`}
       >
