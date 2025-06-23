@@ -8,8 +8,8 @@ const useInputFieldStyling = () => {
       color: isDarkMode ? "white" : "",
     },
     "& .MuiFormLabel-root": {
-      color: isDarkMode ? "white" : "",
-      opacity: "60%",
+      color: isDarkMode ? "white" : "#025F92",
+      opacity: "100%",
     },
     // Targets the label
     "& .MuiInputLabel-root.Mui-focused": {

@@ -12,8 +12,8 @@ const config: Config = {
       colors: {
         lightbg: "#f5f5f5",
         lightPrimary: "#e2e0e0",
-        blueAccent: "#0288D1",
-        darkblueAccent: "#2BAFF8",
+        blueAccent: "#025F92",
+        darkblueAccent: "#5DC2F9",
         darkbg: "#252323",
         darkPrimary: "#3A3939",
         darkInteract: "#484747" /* Lighter shade for hover effect */,

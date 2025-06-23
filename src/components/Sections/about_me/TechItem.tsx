@@ -10,12 +10,7 @@ const TechItem = ({ iconInfo }: { iconInfo: HrefIcon }) => {
         <HoverableContainer>
           <div className="pt-5 px-5 h-full relative flex flex-col items-center">
             <div className="h-[60] pb-2">
-              <Image
-                width={50}
-                height={75}
-                src={iconInfo.src}
-                alt={iconInfo.alt}
-              />
+              <Image width={50} height={75} src={iconInfo.src} alt="" />
             </div>
             <p className="text-sm font-outfit text-center mt-auto pb-1 px-6 xl:px-0">
               {iconInfo.alt}

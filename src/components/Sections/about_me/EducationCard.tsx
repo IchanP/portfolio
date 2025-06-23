@@ -26,7 +26,7 @@ const EducationCard = ({
           href={educationData.href}
           rel="noopener noreferrer"
           target="_blank"
-          className="text-2xl font-outfit font-medium text-blueAccent underline"
+          className="text-2xl font-outfit font-medium text-blueAccent dark:text-darkblueAccent underline"
         >
           {educationData.subheading}
         </a>

@@ -67,6 +67,7 @@ const FormFields = ({
         required
         multiline
         rows={6}
+        aria-label="Contact Message"
         error={validationErrors.message}
         helperText={validationErrors.message ? t("Errors.Message") : ""}
         fullWidth
