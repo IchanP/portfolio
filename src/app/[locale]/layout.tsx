@@ -7,6 +7,7 @@ import { getMessages } from "next-intl/server";
 import Footer from "components/Sections/footer/Footer";
 import { Metadata } from "next/types";
 import { locales } from "i18n/locales";
+import { Analytics } from "@vercel/analytics/next";
 
 const ovoRegular = localFont({
   src: "../fonts/Ovo-Regular.ttf",
@@ -78,6 +79,7 @@ export default async function RootLayout({
             <div className="">
               <main className="flex w-full flex-row justify-center items-center">
                 {children}
+                <Analytics />
               </main>
             </div>
             <footer className="bottom-0 w-full py-2 ">
