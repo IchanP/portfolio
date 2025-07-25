@@ -51,6 +51,10 @@
         "Weather App": {
             "title": "Väder Applikation - (WIP)",
             "summary": "En väderapplikation som integrerar mot SMHI's publika API. Appen renderar aktuell GeoJSON väderdata med Leaflet. Byggd med Python, C#, och Next.JS. Med CI/CD setup genom Github Actions."
+        },
+        "League": {
+            "title": "League Desktop och Webbapp - 2022",
+            "summary": "Ett verktyg för att ge insikter och statistik till League of Legends spelare. Applikationen är delad mellan en webbapp och en desktop applikation byggd i Electron. Electron applikationen integrerar direkt med League of Legends klienten för att samla statistik om vinster och förluster."
         }
     },
     "Contact": {

@@ -49,8 +49,12 @@
             "summary": "A modern and responsive portfolio, built with TypeScript, React, Tailwind CSS and Material UI. The portfolio showcases my education, projects and myself."
         },
         "Weather App": {
-            "title": "Weather App - (WIP)",
+            "title": "Weather App - June 2025",
             "summary": "A weather application built against SMHI’s public API. Rendering GeoJSON data using Leaflet. Built with Python, C# and Next.Js, with CI/CD setup using Github actions."
+        },
+        "League": {
+            "title": "League Desktop and Web App - 2022",
+            "summary": "A tool for enhancing gameplay in League of Legends. Providing insights into gameplay factors and collecting statistics about user gameplay. Split into a web version that offers gameplay insights and an Electron desktop application that integrates with the League of Legends game client."
         }
     },
     "Contact": {

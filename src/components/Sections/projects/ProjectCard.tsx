@@ -6,14 +6,15 @@ import ParagraphText from "components/ui/ParagraphText";
 import Button from "@mui/material/Button";
 import { SvgIcon } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import BlackOverlayBoxImage from "./BlackOverlayBoxImage";
 import Link from "next/link";
 
 const ProjectCard = ({ project }: { project: ProjectInfo }) => {
   return (
     <Card
-      sx={{ maxWidth: 311 }}
-      className="dark:bg-darkInteract dark:text-white"
+      sx={{ maxWidth: 311, height: "fit-content" }}
+      className="dark:bg-darkInteract dark:text-white "
     >
       <BlackOverlayBoxImage imgAlt={project.imgAlt} imgSrc={project.imgSrc} />
       <CardContent className="flex flex-col gap-3">
@@ -27,6 +28,14 @@ const ProjectCard = ({ project }: { project: ProjectInfo }) => {
         {project.figmaUrl && (
           <ButtonLink href={project.figmaUrl}>
             <SvgWithText icon={FigmaIcon()} text="Figma" />
+          </ButtonLink>
+        )}
+        {project.website && (
+          <ButtonLink href={project.website}>
+            <SvgWithText
+              icon={<OpenInNewIcon className="dark:text-darkblueAccent" />}
+              text="Website"
+            />
           </ButtonLink>
         )}
         <ButtonLink href={project.githubUrl}>
