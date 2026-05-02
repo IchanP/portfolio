@@ -14,7 +14,7 @@
     "Introduction": {
         "present": "Hi, I'm ",
         "job_title": "Fullstack JavaScript Developer",
-        "introductory_text": "I'm a fullstack JavaScript developer with a goal to bring innovative and engaging web experiences to general audiences.",
+        "introductory_text": "I'm a fullstack JavaScript developer with an interest in building applications that help users learn new skills.",
         "view_cv": "View CV",
         "contact": "Contact"
     },
@@ -23,10 +23,16 @@
         "Header": "About me",
         "Tools": "Tools I use",
         "Text": {
-            "paragraph_1": "I'm a curious web developer who always aim to try out new things in every project or thing that I do. My approach is driven by a desire to learn and grow, ensuring that each project is an opportunity to bring something new to what comes next.",
-            "paragraph_2": "Outside of programming and technology, I enjoy playing games and frisbee golf with friends. I am an active and continous learner and like to learn new things inside and outside of technology, most of my favorite Youtube channels are educational!"
+            "paragraph_1": "I’m a full-stack JavaScript developer at Cloudbackend, where I work on a SaaS platform built on a custom web framework developed by our sister company. \n My work focuses on building features across the stack, with a particular emphasis on integrating database functionality into the frontend—bridging the gap between data and user-facing interfaces. \n I collaborate closely with designers and developers to deliver reliable, user-focused solutions, and I’m always looking for ways to improve how we build and structure our applications.",
+            "paragraph_2": "Outside of development, I enjoy playing games, frisbee golfing with friends, and currently a heavy focus on learning Japanese."
         },
         "Education": {
+            "CloudBackend": {
+                "title": "Web Developer",
+                "major": "CloudBackend",
+                "location": "Working as a web developer with focus on developing our SaaS platform",
+                "timeframe": "2025-"
+            },
             "University": {
                 "title": "Education",
                 "major": "Bachelor's Degree in Computer Science",

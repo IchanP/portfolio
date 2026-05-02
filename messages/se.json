@@ -14,7 +14,7 @@
     "Introduction": {
         "present": "Hej, jag är ",
         "job_title": "Fullstack JavaScript Developer",
-        "introductory_text": "Jag är en fullstack JavaScript utvecklare med mål att skapa innovativa och engagerande webbupplevelser för gemene man.",
+        "introductory_text": "Jag är en fullstack JavaScript utvecklare med ett intresse för att bygga applikationer som hjälper användare att lära sig nya skills.",
         "contact": "Kontakta mig",
         "view_cv": "Visa CV"
     },
@@ -23,10 +23,16 @@
         "Header": "Om mig",
         "Tools": "Mina verktyg",
         "Text": {
-            "paragraph_1": "Jag är en nyfiken webbutvecklare som alltid försöker att testa något nytt i varje projekt och sak jag gör. Mitt tillvägagångssätt drivs av en önskan att lära mig och utvecklas, och jag ser till att varje projekt blir en möjlighet att tillföra något nytt till nästa utmaning.",
-            "paragraph_2": "Utöver programmering och teknologi så gillar jag att spela spel och frisbee golf med vänner. Jag arbetar alltid för kontinuerligt lärande, och gillar att lära mig saker både inom och utanför teknologi. Majoriteten av mina favorit Youtube-kanaler är lärorika och utbildningsinriktade!"
+            "paragraph_1": "Jag är en fullstack JavaScript-utvecklare på Cloudbackend, där jag arbetar med en SaaS-plattform byggd på ett eget webbramverk utvecklat av vårt systerbolag.\nMitt arbete fokuserar på att bygga funktioner genom hela stacken, med särskilt fokus på att integrera databasfunktionalitet i frontend—att överbrygga gapet mellan data och användargränssnitt.\nJag samarbetar nära med designers och utvecklare för att leverera pålitliga och användarfokuserade lösningar, och jag letar ständigt efter sätt att förbättra hur vi bygger och strukturerar våra applikationer.",
+            "paragraph_2": "Utanför utveckling tycker jag om att spela spel, spela frisbeegolf med vänner, och just nu lägger jag stort fokus på att lära mig japanska."
         },
         "Education": {
+            "CloudBackend": {
+                "title": "Web Utvecklare",
+                "major": "CloudBackend",
+                "location": "Utvecklar vår SaaS platform med fokus på databas integrationer",
+                "timeframe": "2025-"
+            },
             "University": {
                 "title": "Utbildning",
                 "major": "Kandidatexamen i Datavetenskap",

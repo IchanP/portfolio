@@ -5,6 +5,11 @@ export const techStack: HrefIcon[] = [
     alt: "TypeScript",
   },
   {
+    href: "https://www.w3schools.com/xml/xml_xlink.asp",
+    src: "/stack/xml.svg",
+    alt: "XML",
+  },
+  {
     href: "https://nodejs.org/en",
     src: "/stack/node.svg",
     alt: "NodeJS",
@@ -34,7 +39,7 @@ export const techStack: HrefIcon[] = [
     src: "/stack/docker.svg",
     alt: "Docker",
   },
-  {
+  /*   {
     href: "https://kubernetes.io/",
     src: "/stack/kubernetes.svg",
     alt: "Kubernetes",
@@ -43,14 +48,12 @@ export const techStack: HrefIcon[] = [
     href: "https://www.mysql.com/",
     src: "/stack/mysql.svg",
     alt: "MySQL",
-  },
+  }, */
   {
     href: "https://www.mongodb.com/",
     src: "/stack/mongodb.svg",
     alt: "MongoDB",
   },
-
-  // TODO add figma, node, mongodb
 ];
 
 export interface HrefIcon {

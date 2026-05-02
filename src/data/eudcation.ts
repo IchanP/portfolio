@@ -5,6 +5,13 @@ export function getTranslatedEducation(): Array<EducationCardProps> {
   const t = useTranslations("About Me.Education");
   return [
     {
+      title: t("CloudBackend.title"),
+      subheading: t("CloudBackend.major"),
+      location: t("CloudBackend.location"),
+      timeframe: t("CloudBackend.timeframe"),
+      href: "https://cloudbackend.com",
+    },
+    {
       title: t("University.title"),
       subheading: t("University.major"),
       location: t("University.location"),
